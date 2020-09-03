@@ -1,0 +1,368 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.2.75",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "extras" : {
+                "send2ue" : {
+                    "add_leaf_bones" : 0,
+                    "advanced_ui_import" : 0,
+                    "always_use_unreal_scene_scale" : 1,
+                    "apply_scale_options" : "FBX_SCALE_NONE",
+                    "apply_unit_scale" : 1,
+                    "armature_nodetype" : "NULL",
+                    "auto_stash_active_action" : 1,
+                    "auto_sync_control_nla_to_source" : 1,
+                    "axis_forward" : "-Y",
+                    "axis_up" : "Z",
+                    "bake_anim" : 1,
+                    "bake_anim_force_startend_keying" : 1,
+                    "bake_anim_simplify_factor" : 0,
+                    "bake_anim_step" : 1,
+                    "bake_anim_use_all_bones" : 1,
+                    "bake_space_transform" : 0,
+                    "disk_animation_folder_path" : "C:/",
+                    "disk_mesh_folder_path" : "C:/",
+                    "do_not_show_again" : 0,
+                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x000001B9900CBA48>>",
+                    "error_message" : "",
+                    "export_all_actions" : 1,
+                    "global_scale" : 1,
+                    "import_animations" : 1,
+                    "import_lods" : 0,
+                    "import_materials" : 1,
+                    "import_textures" : 1,
+                    "incorrect_disk_animation_folder_path" : 0,
+                    "incorrect_disk_mesh_folder_path" : 0,
+                    "mesh_smooth_type" : "FACE",
+                    "options_type" : "paths",
+                    "path_mode" : "send_to_unreal",
+                    "primary_bone_axis" : "Y",
+                    "secondary_bone_axis" : "X",
+                    "show_fbx_settings" : 0,
+                    "unreal_animation_folder_path" : "/Game/untitled_category/untitled_asset/animations/",
+                    "unreal_mesh_folder_path" : "/Game/untitled_category/untitled_asset/",
+                    "unreal_skeleton_asset_path" : "",
+                    "use_armature_deform_only" : 0,
+                    "use_custom_props" : 0,
+                    "use_mesh_edges" : 0,
+                    "use_mesh_modifiers" : 1,
+                    "use_metadata" : 1,
+                    "use_object_origin" : 0,
+                    "use_subsurf" : 0,
+                    "use_tspace" : 0,
+                    "use_ue2rigify" : 0,
+                    "validate_materials" : 0,
+                    "validate_textures" : 0
+                },
+                "vr_landmarks" : [
+                    {
+                        "type" : 0
+                    }
+                ]
+            },
+            "name" : "Scene_Room01",
+            "nodes" : [
+                0
+            ]
+        },
+        {
+            "extras" : {
+                "send2ue" : {
+                    "add_leaf_bones" : 0,
+                    "advanced_ui_import" : 0,
+                    "always_use_unreal_scene_scale" : 1,
+                    "apply_scale_options" : "FBX_SCALE_NONE",
+                    "apply_unit_scale" : 1,
+                    "armature_nodetype" : "NULL",
+                    "auto_stash_active_action" : 1,
+                    "auto_sync_control_nla_to_source" : 1,
+                    "axis_forward" : "-Y",
+                    "axis_up" : "Z",
+                    "bake_anim" : 1,
+                    "bake_anim_force_startend_keying" : 1,
+                    "bake_anim_simplify_factor" : 0,
+                    "bake_anim_step" : 1,
+                    "bake_anim_use_all_bones" : 1,
+                    "bake_space_transform" : 0,
+                    "disk_animation_folder_path" : "C:/",
+                    "disk_mesh_folder_path" : "C:/",
+                    "do_not_show_again" : 0,
+                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x0000014FD0459C38>>",
+                    "error_message" : "",
+                    "export_all_actions" : 1,
+                    "global_scale" : 1,
+                    "import_animations" : 1,
+                    "import_lods" : 0,
+                    "import_materials" : 1,
+                    "import_textures" : 1,
+                    "incorrect_disk_animation_folder_path" : 0,
+                    "incorrect_disk_mesh_folder_path" : 0,
+                    "mesh_smooth_type" : "FACE",
+                    "options_type" : "paths",
+                    "path_mode" : "send_to_unreal",
+                    "primary_bone_axis" : "Y",
+                    "secondary_bone_axis" : "X",
+                    "show_fbx_settings" : 0,
+                    "unreal_animation_folder_path" : "/Game/untitled_category/untitled_asset/animations/",
+                    "unreal_mesh_folder_path" : "/Game/untitled_category/untitled_asset/",
+                    "unreal_skeleton_asset_path" : "",
+                    "use_armature_deform_only" : 0,
+                    "use_custom_props" : 0,
+                    "use_mesh_edges" : 0,
+                    "use_mesh_modifiers" : 1,
+                    "use_metadata" : 1,
+                    "use_object_origin" : 0,
+                    "use_subsurf" : 0,
+                    "use_tspace" : 0,
+                    "use_ue2rigify" : 0,
+                    "validate_materials" : 0,
+                    "validate_textures" : 0
+                }
+            },
+            "name" : "Scene_Room02"
+        },
+        {
+            "extras" : {
+                "send2ue" : {
+                    "add_leaf_bones" : 0,
+                    "advanced_ui_import" : 0,
+                    "always_use_unreal_scene_scale" : 1,
+                    "apply_scale_options" : "FBX_SCALE_NONE",
+                    "apply_unit_scale" : 1,
+                    "armature_nodetype" : "NULL",
+                    "auto_stash_active_action" : 1,
+                    "auto_sync_control_nla_to_source" : 1,
+                    "axis_forward" : "-Y",
+                    "axis_up" : "Z",
+                    "bake_anim" : 1,
+                    "bake_anim_force_startend_keying" : 1,
+                    "bake_anim_simplify_factor" : 0,
+                    "bake_anim_step" : 1,
+                    "bake_anim_use_all_bones" : 1,
+                    "bake_space_transform" : 0,
+                    "disk_animation_folder_path" : "C:/",
+                    "disk_mesh_folder_path" : "C:/",
+                    "do_not_show_again" : 0,
+                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x000001D52AFEA9B8>>",
+                    "error_message" : "",
+                    "export_all_actions" : 1,
+                    "global_scale" : 1,
+                    "import_animations" : 1,
+                    "import_lods" : 0,
+                    "import_materials" : 1,
+                    "import_textures" : 1,
+                    "incorrect_disk_animation_folder_path" : 0,
+                    "incorrect_disk_mesh_folder_path" : 0,
+                    "mesh_smooth_type" : "FACE",
+                    "options_type" : "paths",
+                    "path_mode" : "send_to_unreal",
+                    "primary_bone_axis" : "Y",
+                    "secondary_bone_axis" : "X",
+                    "show_fbx_settings" : 0,
+                    "unreal_animation_folder_path" : "/Game/untitled_category/untitled_asset/animations/",
+                    "unreal_mesh_folder_path" : "/Game/untitled_category/untitled_asset/",
+                    "unreal_skeleton_asset_path" : "",
+                    "use_armature_deform_only" : 0,
+                    "use_custom_props" : 0,
+                    "use_mesh_edges" : 0,
+                    "use_mesh_modifiers" : 1,
+                    "use_metadata" : 1,
+                    "use_object_origin" : 0,
+                    "use_subsurf" : 0,
+                    "use_tspace" : 0,
+                    "use_ue2rigify" : 0,
+                    "validate_materials" : 0,
+                    "validate_textures" : 0
+                }
+            },
+            "name" : "Scene_Room03"
+        },
+        {
+            "extras" : {
+                "send2ue" : {
+                    "add_leaf_bones" : 0,
+                    "advanced_ui_import" : 0,
+                    "always_use_unreal_scene_scale" : 1,
+                    "apply_scale_options" : "FBX_SCALE_NONE",
+                    "apply_unit_scale" : 1,
+                    "armature_nodetype" : "NULL",
+                    "auto_stash_active_action" : 1,
+                    "auto_sync_control_nla_to_source" : 1,
+                    "axis_forward" : "-Y",
+                    "axis_up" : "Z",
+                    "bake_anim" : 1,
+                    "bake_anim_force_startend_keying" : 1,
+                    "bake_anim_simplify_factor" : 0,
+                    "bake_anim_step" : 1,
+                    "bake_anim_use_all_bones" : 1,
+                    "bake_space_transform" : 0,
+                    "disk_animation_folder_path" : "C:/",
+                    "disk_mesh_folder_path" : "C:/",
+                    "do_not_show_again" : 0,
+                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x000001FC1C65A6E8>>",
+                    "error_message" : "",
+                    "export_all_actions" : 1,
+                    "global_scale" : 1,
+                    "import_animations" : 1,
+                    "import_lods" : 0,
+                    "import_materials" : 1,
+                    "import_textures" : 1,
+                    "incorrect_disk_animation_folder_path" : 0,
+                    "incorrect_disk_mesh_folder_path" : 0,
+                    "mesh_smooth_type" : "FACE",
+                    "options_type" : "paths",
+                    "path_mode" : "send_to_unreal",
+                    "primary_bone_axis" : "Y",
+                    "secondary_bone_axis" : "X",
+                    "show_fbx_settings" : 0,
+                    "unreal_animation_folder_path" : "/Game/untitled_category/untitled_asset/animations/",
+                    "unreal_mesh_folder_path" : "/Game/untitled_category/untitled_asset/",
+                    "unreal_skeleton_asset_path" : "",
+                    "use_armature_deform_only" : 0,
+                    "use_custom_props" : 0,
+                    "use_mesh_edges" : 0,
+                    "use_mesh_modifiers" : 1,
+                    "use_metadata" : 1,
+                    "use_object_origin" : 0,
+                    "use_subsurf" : 0,
+                    "use_tspace" : 0,
+                    "use_ue2rigify" : 0,
+                    "validate_materials" : 0,
+                    "validate_textures" : 0
+                }
+            },
+            "name" : "Scene_Room04"
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Cube.056",
+            "scale" : [
+                0.6236532330513,
+                0.6236532330513,
+                0.6236532330513
+            ],
+            "translation" : [
+                0,
+                0.9999983906745911,
+                -10
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "Texture_Paint",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0,
+                    "texCoord" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 1
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube.091",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "Textures-Painted",
+            "uri" : "Textures-Painted.jpg"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 120,
+            "max" : [
+                7,
+                9,
+                1.0000001192092896
+            ],
+            "min" : [
+                -1,
+                -1.0000001192092896,
+                -1.0000014305114746
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 120,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 120,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 300,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 1440,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1440,
+            "byteOffset" : 1440
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 960,
+            "byteOffset" : 2880
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 600,
+            "byteOffset" : 3840
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 4440,
+            "uri" : "BlockThing.glb.bin"
+        }
+    ]
+}
