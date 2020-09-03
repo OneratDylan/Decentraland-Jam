@@ -24,24 +24,10 @@
 
 const testCube = new Entity()
 engine.addEntity(testCube)
-testCube.addComponent(new GLTFShape("Models/Test_Cube.glb"))
-testCube.addComponent(new Transform({ position: new Vector3(0, 0, 0) }))
-testCube.getComponent(Transform).scale.z = .5
-testCube.getComponent(Transform).scale.y = .5
-testCube.getComponent(Transform).scale.x = .5
+testCube.addComponent(new GLTFShape("Models/Room_001.glb"))
+testCube.addComponent(new Transform({ position: new Vector3(16, 0, 16) }))
 
-const TestDoor = new Entity()
-engine.addEntity(TestDoor)
-TestDoor.addComponent(new GLTFShape("Models/Door_Test_1.glb"))
-TestDoor.addComponent(new Transform({ position: new Vector3(0, 0, 0) }))
-TestDoor.getComponent(Transform).scale.z = .5
-TestDoor.getComponent(Transform).scale.y = .5
-TestDoor.getComponent(Transform).scale.x = .5
 
-const respawner = new Entity()
-engine.addEntity(respawner)
-respawner.addComponent(new SphereShape())
-respawner.addComponent(new Transform({ position: new Vector3(0, 0, 2) }))
 
 function spawnCube(x: number, y: number, z: number) {
   // create the entity
