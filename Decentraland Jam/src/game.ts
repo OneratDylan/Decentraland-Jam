@@ -31,6 +31,22 @@ const Statue = new Entity()
 engine.addEntity(Statue)
 Statue.addComponent(new GLTFShape("Models/Obj_Statue.gltf"))
 Statue.addComponent(new Transform({ position: new Vector3(16, 0, 16) }))
+
+const Counch = new Entity()
+engine.addEntity(Counch)
+Counch.addComponent(new GLTFShape("Models/Obj_Couch_Long.gltf"))
+Counch.addComponent(new Transform({ position: new Vector3(16, 0, 16) }))
+
+const PlantRoot = new Entity()
+engine.addEntity(PlantRoot)
+PlantRoot.addComponent(new GLTFShape("Models/Obj_PlantRoot_01.gltf"))
+PlantRoot.addComponent(new Transform({ position: new Vector3(16, 0, 16) }))
+
+const Shelf = new Entity()
+engine.addEntity(Shelf)
+Shelf.addComponent(new GLTFShape("Models/Shelf001.gltf"))
+Shelf.addComponent(new Transform({ position: new Vector3(16, 0, 16) }))
+
 //const Statue = new Entity()
 //engine.addEntity(Statue)
 //Statue.addComponent(new GLTFShape("Models/Obj_Statue.glb"))
