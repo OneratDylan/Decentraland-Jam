@@ -62,7 +62,43 @@
                     {
                         "type" : 0
                     }
-                ]
+                ],
+                "glTF2ExportSettings" : {
+                    "export_all_influences" : 0,
+                    "export_animations" : 0,
+                    "export_apply" : 1,
+                    "export_cameras" : 0,
+                    "export_colors" : 1,
+                    "export_copyright" : "",
+                    "export_current_frame" : 0,
+                    "export_def_bones" : 0,
+                    "export_displacement" : 0,
+                    "export_draco_generic_quantization" : 12,
+                    "export_draco_mesh_compression_enable" : 0,
+                    "export_draco_mesh_compression_level" : 6,
+                    "export_draco_normal_quantization" : 10,
+                    "export_draco_position_quantization" : 14,
+                    "export_draco_texcoord_quantization" : 12,
+                    "export_extras" : 1,
+                    "export_force_sampling" : 1,
+                    "export_format" : "GLTF_SEPARATE",
+                    "export_frame_range" : 1,
+                    "export_frame_step" : 1,
+                    "export_image_format" : "AUTO",
+                    "export_lights" : 0,
+                    "export_materials" : 1,
+                    "export_morph" : 0,
+                    "export_morph_normal" : 1,
+                    "export_morph_tangent" : 0,
+                    "export_nla_strips" : 1,
+                    "export_normals" : 1,
+                    "export_selected" : 0,
+                    "export_skins" : 0,
+                    "export_tangents" : 0,
+                    "export_texcoords" : 1,
+                    "export_texture_dir" : "",
+                    "export_yup" : 1
+                }
             },
             "name" : "Scene_Room01",
             "nodes" : [
@@ -240,18 +276,11 @@
     ],
     "nodes" : [
         {
+            "extras" : {
+                "BoolToolRoot" : 1
+            },
             "mesh" : 0,
-            "name" : "Cube.056",
-            "scale" : [
-                0.6236532330513,
-                0.6236532330513,
-                0.6236532330513
-            ],
-            "translation" : [
-                0,
-                0.9999983906745911,
-                -10
-            ]
+            "name" : "Room_001"
         }
     ],
     "materials" : [
@@ -262,20 +291,20 @@
                 0,
                 0
             ],
-            "name" : "Texture_Paint",
+            "name" : "Mat_Material",
             "pbrMetallicRoughness" : {
                 "baseColorTexture" : {
                     "index" : 0,
                     "texCoord" : 0
                 },
                 "metallicFactor" : 0,
-                "roughnessFactor" : 1
+                "roughnessFactor" : 0.5
             }
         }
     ],
     "meshes" : [
         {
-            "name" : "Cube.091",
+            "name" : "Plane.002",
             "primitives" : [
                 {
                     "attributes" : {
@@ -305,64 +334,64 @@
         {
             "bufferView" : 0,
             "componentType" : 5126,
-            "count" : 120,
+            "count" : 143,
             "max" : [
-                7,
-                9,
-                1.0000001192092896
+                8,
+                3.369999885559082,
+                8
             ],
             "min" : [
-                -1,
-                -1.0000001192092896,
-                -1.0000014305114746
+                -8,
+                0,
+                -8
             ],
             "type" : "VEC3"
         },
         {
             "bufferView" : 1,
             "componentType" : 5126,
-            "count" : 120,
+            "count" : 143,
             "type" : "VEC3"
         },
         {
             "bufferView" : 2,
             "componentType" : 5126,
-            "count" : 120,
+            "count" : 143,
             "type" : "VEC2"
         },
         {
             "bufferView" : 3,
             "componentType" : 5123,
-            "count" : 300,
+            "count" : 282,
             "type" : "SCALAR"
         }
     ],
     "bufferViews" : [
         {
             "buffer" : 0,
-            "byteLength" : 1440,
+            "byteLength" : 1716,
             "byteOffset" : 0
         },
         {
             "buffer" : 0,
-            "byteLength" : 1440,
-            "byteOffset" : 1440
+            "byteLength" : 1716,
+            "byteOffset" : 1716
         },
         {
             "buffer" : 0,
-            "byteLength" : 960,
-            "byteOffset" : 2880
+            "byteLength" : 1144,
+            "byteOffset" : 3432
         },
         {
             "buffer" : 0,
-            "byteLength" : 600,
-            "byteOffset" : 3840
+            "byteLength" : 564,
+            "byteOffset" : 4576
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 4440,
-            "uri" : "BlockThing.glb.bin"
+            "byteLength" : 5140,
+            "uri" : "Obj_Statue.bin"
         }
     ]
 }

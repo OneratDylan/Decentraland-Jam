@@ -62,7 +62,43 @@
                     {
                         "type" : 0
                     }
-                ]
+                ],
+                "glTF2ExportSettings" : {
+                    "export_all_influences" : 0,
+                    "export_animations" : 0,
+                    "export_apply" : 1,
+                    "export_cameras" : 0,
+                    "export_colors" : 1,
+                    "export_copyright" : "",
+                    "export_current_frame" : 0,
+                    "export_def_bones" : 0,
+                    "export_displacement" : 0,
+                    "export_draco_generic_quantization" : 12,
+                    "export_draco_mesh_compression_enable" : 0,
+                    "export_draco_mesh_compression_level" : 6,
+                    "export_draco_normal_quantization" : 10,
+                    "export_draco_position_quantization" : 14,
+                    "export_draco_texcoord_quantization" : 12,
+                    "export_extras" : 1,
+                    "export_force_sampling" : 1,
+                    "export_format" : "GLTF_SEPARATE",
+                    "export_frame_range" : 1,
+                    "export_frame_step" : 1,
+                    "export_image_format" : "AUTO",
+                    "export_lights" : 0,
+                    "export_materials" : 1,
+                    "export_morph" : 0,
+                    "export_morph_normal" : 1,
+                    "export_morph_tangent" : 0,
+                    "export_nla_strips" : 1,
+                    "export_normals" : 1,
+                    "export_selected" : 0,
+                    "export_skins" : 0,
+                    "export_tangents" : 0,
+                    "export_texcoords" : 1,
+                    "export_texture_dir" : "",
+                    "export_yup" : 1
+                }
             },
             "name" : "Scene_Room01",
             "nodes" : [
@@ -240,11 +276,13 @@
     ],
     "nodes" : [
         {
-            "extras" : {
-                "BoolToolRoot" : 1
-            },
             "mesh" : 0,
-            "name" : "Room_001"
+            "name" : "statuething",
+            "translation" : [
+                0,
+                0.05999999865889549,
+                -2.4499998092651367
+            ]
         }
     ],
     "materials" : [
@@ -268,7 +306,7 @@
     ],
     "meshes" : [
         {
-            "name" : "Plane.002",
+            "name" : "Cube.170",
             "primitives" : [
                 {
                     "attributes" : {
@@ -298,63 +336,63 @@
         {
             "bufferView" : 0,
             "componentType" : 5126,
-            "count" : 72,
+            "count" : 56,
             "max" : [
-                8,
-                3.369999885559082,
-                8
+                1,
+                2.620000123977661,
+                1
             ],
             "min" : [
-                -8,
+                -1,
                 0,
-                -8
+                -1
             ],
             "type" : "VEC3"
         },
         {
             "bufferView" : 1,
             "componentType" : 5126,
-            "count" : 72,
+            "count" : 56,
             "type" : "VEC3"
         },
         {
             "bufferView" : 2,
             "componentType" : 5126,
-            "count" : 72,
+            "count" : 56,
             "type" : "VEC2"
         },
         {
             "bufferView" : 3,
             "componentType" : 5123,
-            "count" : 150,
+            "count" : 84,
             "type" : "SCALAR"
         }
     ],
     "bufferViews" : [
         {
             "buffer" : 0,
-            "byteLength" : 864,
+            "byteLength" : 672,
             "byteOffset" : 0
         },
         {
             "buffer" : 0,
-            "byteLength" : 864,
-            "byteOffset" : 864
+            "byteLength" : 672,
+            "byteOffset" : 672
         },
         {
             "buffer" : 0,
-            "byteLength" : 576,
-            "byteOffset" : 1728
+            "byteLength" : 448,
+            "byteOffset" : 1344
         },
         {
             "buffer" : 0,
-            "byteLength" : 300,
-            "byteOffset" : 2304
+            "byteLength" : 168,
+            "byteOffset" : 1792
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 2604,
+            "byteLength" : 1960,
             "uri" : "Room_001.glb.bin"
         }
     ]
