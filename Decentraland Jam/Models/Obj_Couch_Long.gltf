@@ -100,7 +100,10 @@
                     "export_yup" : 1
                 }
             },
-            "name" : "Scene_Room01"
+            "name" : "Scene_Room01",
+            "nodes" : [
+                1
+            ]
         },
         {
             "extras" : {
@@ -269,6 +272,207 @@
                 }
             },
             "name" : "Scene_Room04"
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Obj_Couch_Long_collider",
+            "translation" : [
+                1.9660072326660156,
+                0.02365521341562271,
+                0.8045716285705566
+            ]
+        },
+        {
+            "children" : [
+                0
+            ],
+            "mesh" : 1,
+            "name" : "Obj_Couch_Long",
+            "translation" : [
+                -3.912346839904785,
+                -0.011482194066047668,
+                6.7842278480529785
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "Mat_Material",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0,
+                    "texCoord" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 1
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube.180",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3
+                }
+            ]
+        },
+        {
+            "name" : "Obj.Couch.Long.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "Textures-Painted",
+            "uri" : "Textures/Textures-Painted.jpg"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 56,
+            "max" : [
+                0.014612019062042236,
+                1.7567596435546875,
+                0.20504455268383026
+            ],
+            "min" : [
+                -3.9600648880004883,
+                -0.004353542346507311,
+                -1.9260597229003906
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 56,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 56,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 84,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 2499,
+            "max" : [
+                1.8836113214492798,
+                1.5653176307678223,
+                1.0339634418487549
+            ],
+            "min" : [
+                -1.8836115598678589,
+                0.0015707911225035787,
+                -1.0339634418487549
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 2499,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 2499,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 7470,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 672,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 672,
+            "byteOffset" : 672
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 448,
+            "byteOffset" : 1344
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 168,
+            "byteOffset" : 1792
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 29988,
+            "byteOffset" : 1960
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 29988,
+            "byteOffset" : 31948
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 19992,
+            "byteOffset" : 61936
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 14940,
+            "byteOffset" : 81928
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 96868,
+            "uri" : "Obj_Couch_Long.bin"
         }
     ]
 }

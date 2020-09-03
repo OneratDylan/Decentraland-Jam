@@ -277,18 +277,23 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "Obj_Door_001_collider"
+            "name" : "Obj_PlantRoot_Pot_collider",
+            "translation" : [
+                0.7586452960968018,
+                0.021831467747688293,
+                0.20247364044189453
+            ]
         },
         {
             "children" : [
                 0
             ],
             "mesh" : 1,
-            "name" : "Obj_Door_001",
+            "name" : "Obj_PlantRoot_Pot",
             "translation" : [
-                0.7271248698234558,
-                0.012173019349575043,
-                7.894594669342041
+                2.073681592941284,
+                -0.01229795441031456,
+                7.321175575256348
             ]
         }
     ],
@@ -300,7 +305,7 @@
                 0,
                 0
             ],
-            "name" : "Texture_Paint",
+            "name" : "Mat_Material",
             "pbrMetallicRoughness" : {
                 "baseColorTexture" : {
                     "index" : 0,
@@ -313,7 +318,7 @@
     ],
     "meshes" : [
         {
-            "name" : "Cube.033",
+            "name" : "Cube.185",
             "primitives" : [
                 {
                     "attributes" : {
@@ -326,7 +331,7 @@
             ]
         },
         {
-            "name" : "Cube.035",
+            "name" : "Obj_PlantPot_Red.004",
             "primitives" : [
                 {
                     "attributes" : {
@@ -359,13 +364,13 @@
             "count" : 24,
             "max" : [
                 0.014612019062042236,
-                2.5431649684906006,
+                2.0184950828552246,
                 0.20504455268383026
             ],
             "min" : [
-                -1.468833565711975,
+                -1.3229057788848877,
                 -0.004353542346507311,
-                -0.20504452288150787
+                -0.8296294808387756
             ],
             "type" : "VEC3"
         },
@@ -390,35 +395,35 @@
         {
             "bufferView" : 4,
             "componentType" : 5126,
-            "count" : 242,
+            "count" : 923,
             "max" : [
-                0.014612019062042236,
-                2.5431649684906006,
-                0.15261317789554596
+                0.7117067575454712,
+                1.9953665733337402,
+                0.5749648213386536
             ],
             "min" : [
-                -1.468833565711975,
-                -0.004353542346507311,
-                -0.18156278133392334
+                -0.5138424634933472,
+                -0.00013834534911438823,
+                -0.5440720915794373
             ],
             "type" : "VEC3"
         },
         {
             "bufferView" : 5,
             "componentType" : 5126,
-            "count" : 242,
+            "count" : 923,
             "type" : "VEC3"
         },
         {
             "bufferView" : 6,
             "componentType" : 5126,
-            "count" : 242,
+            "count" : 923,
             "type" : "VEC2"
         },
         {
             "bufferView" : 7,
             "componentType" : 5123,
-            "count" : 420,
+            "count" : 2436,
             "type" : "SCALAR"
         }
     ],
@@ -445,29 +450,29 @@
         },
         {
             "buffer" : 0,
-            "byteLength" : 2904,
+            "byteLength" : 11076,
             "byteOffset" : 840
         },
         {
             "buffer" : 0,
-            "byteLength" : 2904,
-            "byteOffset" : 3744
+            "byteLength" : 11076,
+            "byteOffset" : 11916
         },
         {
             "buffer" : 0,
-            "byteLength" : 1936,
-            "byteOffset" : 6648
+            "byteLength" : 7384,
+            "byteOffset" : 22992
         },
         {
             "buffer" : 0,
-            "byteLength" : 840,
-            "byteOffset" : 8584
+            "byteLength" : 4872,
+            "byteOffset" : 30376
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 9424,
-            "uri" : "Obj_Door_001.bin"
+            "byteLength" : 35248,
+            "uri" : "Obj_PlantRoot_Pot.bin"
         }
     ]
 }
