@@ -24,10 +24,17 @@
 
 const testCube = new Entity()
 engine.addEntity(testCube)
-testCube.addComponent(new GLTFShape("Models/Room_001.glb"))
+testCube.addComponent(new GLTFShape("Models/Room_001.gltf"))
 testCube.addComponent(new Transform({ position: new Vector3(16, 0, 16) }))
 
-
+const Statue = new Entity()
+engine.addEntity(Statue)
+Statue.addComponent(new GLTFShape("Models/Obj_Statue.gltf"))
+Statue.addComponent(new Transform({ position: new Vector3(16, 0, 16) }))
+//const Statue = new Entity()
+//engine.addEntity(Statue)
+//Statue.addComponent(new GLTFShape("Models/Obj_Statue.glb"))
+//Statue.addComponent(new Transform({ position: new Vector3(15, 0, 16) }))
 
 function spawnCube(x: number, y: number, z: number) {
   // create the entity
@@ -46,17 +53,17 @@ function spawnCube(x: number, y: number, z: number) {
 }
 
 /// --- Spawn a cube ---
-const cube = spawnCube(16, 1, 16)
-const cube2 = spawnCube(16, 4, 16)
+//const cube = spawnCube(16, 1, 16)
+//const cube2 = spawnCube(16, 4, 16)
 
-cube.addComponent(
-  new OnClick(() => {
-    cube.getComponent(Transform).scale.z *= 1.1
-    cube.getComponent(Transform).scale.x *= 0.9
-
-    spawnCube(Math.random() * 8 + 1, Math.random() * 8, Math.random() * 8 + 1)
-  })
-)
+//cube.addComponent(
+//  new OnClick(() => {
+//    cube.getComponent(Transform).scale.z *= 1.1
+//    cube.getComponent(Transform).scale.x *= 0.9
+//
+//    spawnCube(Math.random() * 8 + 1, Math.random() * 8, Math.random() * 8 + 1)
+//  })
+//)
 
 MovePlayer()
 
