@@ -20,10 +20,20 @@ export function CreateRoom1(pos: Vector3): void {
     PlantRoot.addComponent(new GLTFShape("Models/Obj_PlantRoot_Pot.gltf"))
     PlantRoot.addComponent(new Transform({ position: pos }))
 
+    const PlantRoot2 = new Entity()
+    engine.addEntity(PlantRoot2)
+    PlantRoot2.addComponent(new GLTFShape("Models/Obj_PlantRoot_Pot.gltf"))
+    PlantRoot2.addComponent(new Transform({ position: new Vector3(pos.x - 2, pos.y, pos.z) }))
+
     const Shelf = new Entity()
     engine.addEntity(Shelf)
     Shelf.addComponent(new GLTFShape("Models/Obj_Shelf001.gltf"))
     Shelf.addComponent(new Transform({ position: pos }))
+
+    const Shelf2 = new Entity()
+    engine.addEntity(Shelf2)
+    Shelf2.addComponent(new GLTFShape("Models/Obj_Shelf001.gltf"))
+    Shelf2.addComponent(new Transform({ position: new Vector3(pos.x - 4.55, pos.y, pos.z) }))
 
     const Table = new Entity()
     engine.addEntity(Table)
