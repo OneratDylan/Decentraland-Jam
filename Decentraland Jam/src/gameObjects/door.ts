@@ -1,3 +1,4 @@
+import { SlerpData } from "customcomponents";
 
 export class Door extends Entity {
 
@@ -12,6 +13,10 @@ export class Door extends Entity {
 
         this.addComponent(model)
         this.addComponent(new Transform({ position: pos }))
+
+        this.addComponent(new SlerpData())
+        this.getComponent(SlerpData).originRot = Quaternion.Euler(0, 0, 0)
+        this.getComponent(SlerpData).targetRot = Quaternion.Euler(0, 90, 0)
 
         this.addComponent(
             new OnPointerDown(

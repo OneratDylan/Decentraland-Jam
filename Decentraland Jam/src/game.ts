@@ -113,19 +113,12 @@ const door = new Door(
     new Vector3(23.25, 0, 32)
 );
 
-door.addComponent(new SlerpData())
-door.getComponent(SlerpData).originRot = Quaternion.Euler(0, 0, 0)
-door.getComponent(SlerpData).targetRot = Quaternion.Euler(0, 90, 0)
-
 //Door Two Init
 const door_2 = new Door(
     new GLTFShape("Models/Obj_Door_002.gltf.glb"),
     new Vector3(23.25, 0, 16)
 );
 
-door_2.addComponent(new SlerpData())
-door_2.getComponent(SlerpData).originRot = Quaternion.Euler(0, 0, 0)
-door_2.getComponent(SlerpData).targetRot = Quaternion.Euler(0, 90, 0)
 
 
 
