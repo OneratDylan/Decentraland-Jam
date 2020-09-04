@@ -6,7 +6,10 @@ export class Door extends Entity {
 
     constructor(
         model: GLTFShape,
-        pos: Vector3
+        pos: Vector3,
+
+        startRot: Vector3,
+        endRot: Vector3
     ) {
         super();
         engine.addEntity(this)
@@ -15,8 +18,8 @@ export class Door extends Entity {
         this.addComponent(new Transform({ position: pos }))
 
         this.addComponent(new SlerpData())
-        this.getComponent(SlerpData).originRot = Quaternion.Euler(0, 0, 0)
-        this.getComponent(SlerpData).targetRot = Quaternion.Euler(0, 90, 0)
+        this.getComponent(SlerpData).originRot = Quaternion.Euler(startRot.x, startRot.y, startRot.z)
+        this.getComponent(SlerpData).targetRot = Quaternion.Euler(endRot.x, endRot.y, endRot.z)
 
         this.addComponent(
             new OnPointerDown(
@@ -25,7 +28,6 @@ export class Door extends Entity {
                 },
                 { hoverText: "Open Door" }
             )
-        )
-       
+        )   
     }
 }
