@@ -2,7 +2,7 @@ export function CreateRoom1(pos: Vector3): void {
 
     const testCube = new Entity()
     engine.addEntity(testCube)
-    testCube.addComponent(new GLTFShape("Models/Room_001.gltf"))
+    testCube.addComponent(new GLTFShape("Models/Room_16x16_01.gltf"))
     testCube.addComponent(new Transform({ position: pos }))
 
     const Statue = new Entity()
