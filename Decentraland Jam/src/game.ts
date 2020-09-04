@@ -28,6 +28,22 @@ const door_2 = new Door(
     new Vector3(0, 90, 0)
 );
 
+//Door Three Init
+const door_3 = new Door(
+    new GLTFShape("Models/Obj_Door_002.gltf.glb"),
+    new Vector3(x - (roomSize / 2), 0, y + 0.75),
+    new Vector3(0, 0, 0),
+    new Vector3(0, 90, 0)
+);
+
+//Door Three Init
+const door_4 = new Door(
+    new GLTFShape("Models/Obj_Door_002.gltf.glb"),
+    new Vector3(x + (roomSize / 2), 0, y - 0.75),
+    new Vector3(0, 0, 0),
+    new Vector3(0, 90, 0)
+);
+
 function distance(pos1: Vector3, pos2: Vector3): number {
     const a = pos1.x - pos2.x
     const b = pos1.z - pos2.z
