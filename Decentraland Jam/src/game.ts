@@ -122,26 +122,8 @@ function MovePlayer() {
     engine.addEntity(respawner)
 }
 
-const door = new Door(
-    new GLTFShape("Models/Obj_Door_002.gltf.glb"),
-    new Vector3(23.25, 0, 32)
-);
 
 
-
-          let doIt: boolean = false;
-DoorOpen()
-function DoorOpen() {
-    door.addComponent(
-        new OnPointerDown(
-            (e) => {
-                //do thing here
-                doIt = true;
-            },
-            { hoverText: "Open Door" }
-        )
-    )
-}
 
 @Component("slerpData")
 export class SlerpData {
@@ -153,7 +135,7 @@ export class SlerpData {
 // a system to carry out the rotation
 export class SlerpRotate implements ISystem {
     update(dt: number) {
-        if (doIt) {
+        if (door.doIt) {
             let slerp = door.getComponent(SlerpData)
             let transform = door.getComponent(Transform)
             if (slerp.fraction < 1) {
@@ -170,6 +152,11 @@ export class SlerpRotate implements ISystem {
 }
 // Add system to engine
 engine.addSystem(new SlerpRotate())
+
+const door = new Door(
+    new GLTFShape("Models/Obj_Door_002.gltf.glb"),
+    new Vector3(23.25, 0, 32)
+);
 
 door.addComponent(new SlerpData())
 door.getComponent(SlerpData).originRot = Quaternion.Euler(0, 0, 0)
