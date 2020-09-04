@@ -1,5 +1,6 @@
 import { Door } from "./gameObjects/door";
 
+import { SlerpData } from "./customcomponents";
 
 /// --- Init Objs ---
 
@@ -70,16 +71,6 @@ function MovePlayer() {
     )
 
     engine.addEntity(respawner)
-}
-
-
-
-
-@Component("slerpData")
-export class SlerpData {
-    originRot: Quaternion = Quaternion.Euler(0, 90, 0)
-    targetRot: Quaternion = Quaternion.Euler(0, 0, 0)
-    fraction: number = 0
 }
 
 // a system to carry out the rotation

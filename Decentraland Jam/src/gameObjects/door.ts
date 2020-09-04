@@ -1,4 +1,3 @@
-import { SlerpData } from "../game";
 
 export class Door extends Entity {
 
@@ -22,5 +21,6 @@ export class Door extends Entity {
                 { hoverText: "Open Door" }
             )
         )
+       
     }
 }
