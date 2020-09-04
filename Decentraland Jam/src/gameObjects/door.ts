@@ -18,8 +18,10 @@ export class Door extends Entity {
         this.addComponent(new Transform({ position: pos }))
 
         this.addComponent(new SlerpData())
-        this.getComponent(SlerpData).originRot = Quaternion.Euler(startRot.x, startRot.y, startRot.z)
-        this.getComponent(SlerpData).targetRot = Quaternion.Euler(endRot.x, endRot.y, endRot.z)
+        this.getComponent(SlerpData).originRot =
+            Quaternion.Euler(startRot.x, startRot.y, startRot.z)
+        this.getComponent(SlerpData).targetRot =
+            Quaternion.Euler(endRot.x, endRot.y, endRot.z)
 
         this.addComponent(
             new OnPointerDown(
