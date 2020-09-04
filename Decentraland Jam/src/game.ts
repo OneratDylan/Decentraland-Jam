@@ -144,7 +144,7 @@ export class SlerpRotate implements ISystem {
                     slerp.fraction
                 )
                 transform.rotation = rot
-                slerp.fraction += dt / 5
+                slerp.fraction += dt / 2
             }
         }
     }
@@ -153,11 +153,12 @@ export class SlerpRotate implements ISystem {
 // Add system to engine
 engine.addSystem(new SlerpRotate())
 
+
 let doIt: boolean = false;
 
 const Door = new Entity()
 Door.addComponent(new GLTFShape("Models/Obj_Door_002.gltf.glb"))
-Door.addComponent(new Transform({ position: new Vector3(24, 0, 24) }))
+Door.addComponent(new Transform({ position: new Vector3(23.25, 0, 32) }))
 
 Door.addComponent(new SlerpData())
 Door.getComponent(SlerpData).originRot = Quaternion.Euler(0, 0, 0)
