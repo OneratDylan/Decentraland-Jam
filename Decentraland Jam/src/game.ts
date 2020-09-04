@@ -1,4 +1,4 @@
-import utils from "../node_modules/decentraland-ecs-utils/index"
+import { Door } from "./gameObjects/door";
 
 /// --- Set up a system ---
 
@@ -122,7 +122,26 @@ function MovePlayer() {
     engine.addEntity(respawner)
 }
 
+const door = new Door(
+    new GLTFShape("Models/Obj_Door_002.gltf.glb"),
+    new Vector3(23.25, 0, 32)
+);
 
+
+
+          let doIt: boolean = false;
+DoorOpen()
+function DoorOpen() {
+    door.addComponent(
+        new OnPointerDown(
+            (e) => {
+                //do thing here
+                doIt = true;
+            },
+            { hoverText: "Open Door" }
+        )
+    )
+}
 
 @Component("slerpData")
 export class SlerpData {
@@ -135,8 +154,8 @@ export class SlerpData {
 export class SlerpRotate implements ISystem {
     update(dt: number) {
         if (doIt) {
-            let slerp = Door.getComponent(SlerpData)
-            let transform = Door.getComponent(Transform)
+            let slerp = door.getComponent(SlerpData)
+            let transform = door.getComponent(Transform)
             if (slerp.fraction < 1) {
                 let rot = Quaternion.Slerp(
                     slerp.originRot,
@@ -149,38 +168,18 @@ export class SlerpRotate implements ISystem {
         }
     }
 }
-
 // Add system to engine
 engine.addSystem(new SlerpRotate())
 
-
-let doIt: boolean = false;
-
-const Door = new Entity()
-Door.addComponent(new GLTFShape("Models/Obj_Door_002.gltf.glb"))
-Door.addComponent(new Transform({ position: new Vector3(23.25, 0, 32) }))
-
-Door.addComponent(new SlerpData())
-Door.getComponent(SlerpData).originRot = Quaternion.Euler(0, 0, 0)
-Door.getComponent(SlerpData).targetRot = Quaternion.Euler(0, 90, 0)
-
-engine.addEntity(Door)
-
-DoorOpen()
-
-function DoorOpen() {
+door.addComponent(new SlerpData())
+door.getComponent(SlerpData).originRot = Quaternion.Euler(0, 0, 0)
+door.getComponent(SlerpData).targetRot = Quaternion.Euler(0, 90, 0)
 
 
-    Door.addComponent(
-        new OnPointerDown(
-            (e) => {
-                //do thing here
-                doIt = true;
-            },
-            { hoverText: "Open Door" }
-        )
-    )
-}
+
+
+
+
 
 
 
