@@ -102,7 +102,9 @@ export class DoorUpdate implements ISystem {
                 let transform = door.getComponent(Transform)
                 if (slerp.fraction < 1) {
                     let rot = Quaternion.Slerp(
-                        slerp.targetRot,
+                        Quaternion.Euler(transform.eulerAngles.x,
+                            transform.eulerAngles.y,
+                            transform.eulerAngles.z),
                         slerp.originRot,
                         slerp.fraction
                     )
