@@ -38,7 +38,7 @@ function MovePlayer() {
         new OnPointerDown(
             (e) => {
                 const camera = Camera.instance
-                movePlayerTo({ x: 1, y: camera.position.y - 1, z: 1 })
+                movePlayerTo({ x: 24, y: camera.position.y - 1, z: 24 })
             },
             { hoverText: "Move player" }
         )

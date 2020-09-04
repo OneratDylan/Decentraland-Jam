@@ -17,12 +17,12 @@ export function CreateRoom1(pos: Vector3): void {
 
     const PlantRoot = new Entity()
     engine.addEntity(PlantRoot)
-    PlantRoot.addComponent(new GLTFShape("Models/Obj_PlantRoot_01.gltf"))
+    PlantRoot.addComponent(new GLTFShape("Models/Obj_PlantRoot_Pot.gltf"))
     PlantRoot.addComponent(new Transform({ position: pos }))
 
     const Shelf = new Entity()
     engine.addEntity(Shelf)
-    Shelf.addComponent(new GLTFShape("Models/Shelf001.gltf"))
+    Shelf.addComponent(new GLTFShape("Models/Obj_Shelf001.gltf"))
     Shelf.addComponent(new Transform({ position: pos }))
 
     const Table = new Entity()
