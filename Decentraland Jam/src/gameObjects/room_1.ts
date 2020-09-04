@@ -5,6 +5,11 @@ export function CreateRoom1(pos: Vector3): void {
     testCube.addComponent(new GLTFShape("Models/Room_16x16_01.gltf"))
     testCube.addComponent(new Transform({ position: pos }))
 
+    const room2 = new Entity()
+    engine.addEntity(room2)
+    room2.addComponent(new GLTFShape("Models/Room_8x8_01.gltf"))
+    room2.addComponent(new Transform({ position: new Vector3(pos.x - 16, pos.y, pos.z) }))
+
     const Statue = new Entity()
     engine.addEntity(Statue)
     Statue.addComponent(new GLTFShape("Models/Obj_Statue.gltf"))
