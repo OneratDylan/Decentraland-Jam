@@ -27,7 +27,7 @@ export class Door extends Entity {
         this.addComponent(
             new OnPointerDown(
                 (e) => {
-
+                    this.getComponent(SlerpData).fraction = 0
                     this.Open = true;
                 },
                 { hoverText: "Open Door" }
