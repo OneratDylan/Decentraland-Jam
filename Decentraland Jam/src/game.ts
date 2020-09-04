@@ -47,6 +47,16 @@ engine.addEntity(Shelf)
 Shelf.addComponent(new GLTFShape("Models/Shelf001.gltf"))
 Shelf.addComponent(new Transform({ position: new Vector3(16, 0, 16) }))
 
+const Table = new Entity()
+engine.addEntity(Table)
+Table.addComponent(new GLTFShape("Models/Obj_Table_Coffee.gltf"))
+Table.addComponent(new Transform({ position: new Vector3(16, 0, 16) }))
+
+const TV = new Entity()
+engine.addEntity(TV)
+TV.addComponent(new GLTFShape("Models/Obj_TVStation.gltf"))
+TV.addComponent(new Transform({ position: new Vector3(16, 0, 16) }))
+
 //const Statue = new Entity()
 //engine.addEntity(Statue)
 //Statue.addComponent(new GLTFShape("Models/Obj_Statue.glb"))
