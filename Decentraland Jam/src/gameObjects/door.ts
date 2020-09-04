@@ -17,7 +17,6 @@ export class Door extends Entity {
         this.addComponent(
             new OnPointerDown(
                 (e) => {
-                    //do thing here
                     this.doIt = true;
                 },
                 { hoverText: "Open Door" }
