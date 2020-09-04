@@ -2,7 +2,8 @@ import { SlerpData } from "customcomponents";
 
 export class Door extends Entity {
 
-    public doIt: boolean = false;
+    public Open: boolean = false;
+    public IsClosing: boolean = false;
 
     constructor(
         model: GLTFShape,
@@ -26,7 +27,8 @@ export class Door extends Entity {
         this.addComponent(
             new OnPointerDown(
                 (e) => {
-                    this.doIt = true;
+
+                    this.Open = true;
                 },
                 { hoverText: "Open Door" }
             )

@@ -60,7 +60,8 @@ function MovePlayer() {
 // a system to carry out the rotation
 export class SlerpRotate implements ISystem {
     update(dt: number) {
-        if (door.doIt) {
+        if (door.Open) {
+
             let slerp = door.getComponent(SlerpData)
             let transform = door.getComponent(Transform)
             if (slerp.fraction < 1) {
@@ -73,7 +74,7 @@ export class SlerpRotate implements ISystem {
                 slerp.fraction += dt / 2
             }
         }
-        if (door_2.doIt) {
+        if (door_2.Open) {
             let slerp = door_2.getComponent(SlerpData)
             let transform = door_2.getComponent(Transform)
             if (slerp.fraction < 1) {
@@ -89,11 +90,55 @@ export class SlerpRotate implements ISystem {
 
         //distance
         const camera = Camera.instance
-        if (distance(door.getComponent(Transform).position, camera.position) < 6) {
-            door.doIt = true;
+        if (distance(door.getComponent(Transform).position, camera.position) > 15)
+        {
+            if (door.Open) {
+                door.Open = false
+                door.getComponent(SlerpData).fraction = 0;
+                door.IsClosing = true
+            }
+            else if(door.IsClosing){
+                let slerp = door.getComponent(SlerpData)
+                let transform = door.getComponent(Transform)
+                if (slerp.fraction < 1) {
+                    let rot = Quaternion.Slerp(
+                        slerp.targetRot,
+                        slerp.originRot,
+                        slerp.fraction
+                    )
+                    transform.rotation = rot
+                    slerp.fraction += dt / 2
+                }
+            }
+            if (door.getComponent(SlerpData).fraction >= 1) {
+                door.getComponent(SlerpData).fraction = 0;
+                door.IsClosing = false
+            }
         }
-        if (distance(door_2.getComponent(Transform).position, camera.position) < 6) {
-            door_2.doIt = true;
+
+        if (distance(door_2.getComponent(Transform).position, camera.position) > 15) {
+            if (door_2.Open) {
+                door_2.Open = false
+                door_2.getComponent(SlerpData).fraction = 0;
+                door_2.IsClosing = true
+            }
+            else if (door_2.IsClosing) {
+                let slerp = door_2.getComponent(SlerpData)
+                let transform = door_2.getComponent(Transform)
+                if (slerp.fraction < 1) {
+                    let rot = Quaternion.Slerp(
+                        slerp.targetRot,
+                        slerp.originRot,
+                        slerp.fraction
+                    )
+                    transform.rotation = rot
+                    slerp.fraction += dt / 2
+                }
+            }
+            if (door_2.getComponent(SlerpData).fraction >= 1) {
+                door_2.getComponent(SlerpData).fraction = 0;
+                door_2.IsClosing = false
+            }
         }
     }
 }
