@@ -3,9 +3,26 @@ import { CreateRoom1 } from "./gameObjects/room_1"
 import { SlerpData } from "./customcomponents";
 
 /// --- Init Objs ---
+let x: number = 24;
+let y: number = 24;
 
-CreateRoom1();
+CreateRoom1(new Vector3(x, 0, y));
 
+//Door One Init
+const door = new Door(
+    new GLTFShape("Models/Obj_Door_002.gltf.glb"),
+    new Vector3(x - 0.75, 0, y + 8),
+    new Vector3(0, 0, 0),
+    new Vector3(0, 90, 0)
+);
+
+//Door Two Init
+const door_2 = new Door(
+    new GLTFShape("Models/Obj_Door_002.gltf.glb"),
+    new Vector3(x - 0.75, 0, y - 8),
+    new Vector3(0, 0, 0),
+    new Vector3(0, 90, 0)
+);
 
 MovePlayer()
 
@@ -64,21 +81,7 @@ export class SlerpRotate implements ISystem {
 // Add system to engine
 engine.addSystem(new SlerpRotate())
 
-//Door One Init
-const door = new Door(
-    new GLTFShape("Models/Obj_Door_002.gltf.glb"),
-    new Vector3(23.25, 0, 32),
-    new Vector3(0,0,0),
-    new Vector3(0,90,0)
-);
 
-//Door Two Init
-const door_2 = new Door(
-    new GLTFShape("Models/Obj_Door_002.gltf.glb"),
-    new Vector3(23.25, 0, 16),
-    new Vector3(0, 0, 0),
-    new Vector3(0, 90, 0)
-);
 
 
 
