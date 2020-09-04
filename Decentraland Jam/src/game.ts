@@ -1,3 +1,4 @@
+import utils from "../node_modules/decentraland-ecs-utils/index"
 
 /// --- Set up a system ---
 
@@ -121,22 +122,64 @@ function MovePlayer() {
     engine.addEntity(respawner)
 }
 
+
+
+@Component("slerpData")
+export class SlerpData {
+    originRot: Quaternion = Quaternion.Euler(0, 90, 0)
+    targetRot: Quaternion = Quaternion.Euler(0, 0, 0)
+    fraction: number = 0
+}
+
+// a system to carry out the rotation
+export class SlerpRotate implements ISystem {
+    update(dt: number) {
+        if (doIt) {
+            let slerp = Door.getComponent(SlerpData)
+            let transform = Door.getComponent(Transform)
+            if (slerp.fraction < 1) {
+                let rot = Quaternion.Slerp(
+                    slerp.originRot,
+                    slerp.targetRot,
+                    slerp.fraction
+                )
+                transform.rotation = rot
+                slerp.fraction += dt / 5
+            }
+        }
+    }
+}
+
+// Add system to engine
+engine.addSystem(new SlerpRotate())
+
+let doIt: boolean = false;
+
+const Door = new Entity()
+Door.addComponent(new GLTFShape("Models/Obj_Door_001.gltf"))
+Door.addComponent(new Transform({ position: new Vector3(24, 0, 24) }))
+
+Door.addComponent(new SlerpData())
+Door.getComponent(SlerpData).originRot = Quaternion.Euler(0, 0, 0)
+Door.getComponent(SlerpData).targetRot = Quaternion.Euler(0, 90, 0)
+
+engine.addEntity(Door)
+
 DoorOpen()
+
 function DoorOpen() {
-    const Door = new Entity()
-    engine.addEntity(Door)
-    Door.addComponent(new GLTFShape("Models/Obj_Door_001.gltf"))
-    Door.addComponent(new Transform({ position: new Vector3(24, 0, 24) }))
+
 
     Door.addComponent(
         new OnPointerDown(
             (e) => {
                 //do thing here
+                doIt = true;
             },
             { hoverText: "Open Door" }
         )
+    )
 }
-
 
 
 
