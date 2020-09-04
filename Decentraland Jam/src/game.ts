@@ -27,6 +27,11 @@ engine.addEntity(testCube)
 testCube.addComponent(new GLTFShape("Models/Room_001.gltf"))
 testCube.addComponent(new Transform({ position: new Vector3(24, 0, 24) }))
 
+const Door = new Entity()
+engine.addEntity(Door)
+Door.addComponent(new GLTFShape("Models/Obj_Door_001.gltf"))
+Door.addComponent(new Transform({ position: new Vector3(24, 0, 24) }))
+
 const Statue = new Entity()
 engine.addEntity(Statue)
 Statue.addComponent(new GLTFShape("Models/Obj_Statue.gltf"))
@@ -62,10 +67,6 @@ engine.addEntity(Pot)
 Pot.addComponent(new GLTFShape("Models/Obj_PlantRoot.gltf"))
 Pot.addComponent(new Transform({ position: new Vector3(24, 0, 24) }))
 
-//const Statue = new Entity()
-//engine.addEntity(Statue)
-//Statue.addComponent(new GLTFShape("Models/Obj_Statue.glb"))
-//Statue.addComponent(new Transform({ position: new Vector3(15, 0, 16) }))
 
 function spawnCube(x: number, y: number, z: number) {
   // create the entity
