@@ -1,34 +1,12 @@
 import { Door } from "./gameObjects/door";
 
-/// --- Set up a system ---
 
-//class RotatorSystem {
-//  // this group will contain every entity that has a Transform component
-//  group = engine.getComponentGroup(Transform)
-//
-//  update(dt: number) {
-//    // iterate over the entities of the group
-//    for (let entity of this.group.entities) {
-//      // get the Transform component of the entity
-//      const transform = entity.getComponent(Transform)
-//
-//      // mutate the rotation
-//      transform.rotate(Vector3.Up(), dt * 10)
-//    }
-//  }
-//}
-
-// Add a new instance of the system to the engine
-//engine.addSystem(new RotatorSystem())
-
-/// --- Spawner function ---
+/// --- Init Objs ---
 
 const testCube = new Entity()
 engine.addEntity(testCube)
 testCube.addComponent(new GLTFShape("Models/Room_001.gltf"))
 testCube.addComponent(new Transform({ position: new Vector3(24, 0, 24) }))
-
-
 
 const Statue = new Entity()
 engine.addEntity(Statue)
@@ -138,6 +116,7 @@ export class SlerpRotate implements ISystem {
 // Add system to engine
 engine.addSystem(new SlerpRotate())
 
+//Door One Init
 const door = new Door(
     new GLTFShape("Models/Obj_Door_002.gltf.glb"),
     new Vector3(23.25, 0, 32)
@@ -147,6 +126,7 @@ door.addComponent(new SlerpData())
 door.getComponent(SlerpData).originRot = Quaternion.Euler(0, 0, 0)
 door.getComponent(SlerpData).targetRot = Quaternion.Euler(0, 90, 0)
 
+//Door Two Init
 const door_2 = new Door(
     new GLTFShape("Models/Obj_Door_002.gltf.glb"),
     new Vector3(23.25, 0, 16)
