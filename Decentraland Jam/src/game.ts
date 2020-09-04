@@ -27,10 +27,7 @@ engine.addEntity(testCube)
 testCube.addComponent(new GLTFShape("Models/Room_001.gltf"))
 testCube.addComponent(new Transform({ position: new Vector3(24, 0, 24) }))
 
-const Door = new Entity()
-engine.addEntity(Door)
-Door.addComponent(new GLTFShape("Models/Obj_Door_001.gltf"))
-Door.addComponent(new Transform({ position: new Vector3(24, 0, 24) }))
+
 
 const Statue = new Entity()
 engine.addEntity(Statue)
@@ -67,6 +64,10 @@ engine.addEntity(Pot)
 Pot.addComponent(new GLTFShape("Models/Obj_PlantRoot.gltf"))
 Pot.addComponent(new Transform({ position: new Vector3(24, 0, 24) }))
 
+const Light = new Entity()
+engine.addEntity(Light)
+Light.addComponent(new GLTFShape("Models/Obj_Light_CeilingLamp_005.gltf"))
+Light.addComponent(new Transform({ position: new Vector3(24, 0, 24) }))
 
 function spawnCube(x: number, y: number, z: number) {
   // create the entity
@@ -118,6 +119,22 @@ function MovePlayer() {
     )
 
     engine.addEntity(respawner)
+}
+
+DoorOpen()
+function DoorOpen() {
+    const Door = new Entity()
+    engine.addEntity(Door)
+    Door.addComponent(new GLTFShape("Models/Obj_Door_001.gltf"))
+    Door.addComponent(new Transform({ position: new Vector3(24, 0, 24) }))
+
+    Door.addComponent(
+        new OnPointerDown(
+            (e) => {
+                //do thing here
+            },
+            { hoverText: "Open Door" }
+        )
 }
 
 
