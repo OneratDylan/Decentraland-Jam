@@ -156,7 +156,7 @@ engine.addSystem(new SlerpRotate())
 let doIt: boolean = false;
 
 const Door = new Entity()
-Door.addComponent(new GLTFShape("Models/Obj_Door_001.gltf"))
+Door.addComponent(new GLTFShape("Models/Obj_Door_002.gltf.glb"))
 Door.addComponent(new Transform({ position: new Vector3(24, 0, 24) }))
 
 Door.addComponent(new SlerpData())
