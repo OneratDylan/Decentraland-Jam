@@ -28,6 +28,12 @@ const door_2 = new Door(
     new Vector3(0, 90, 0)
 );
 
+function distance(pos1: Vector3, pos2: Vector3): number {
+    const a = pos1.x - pos2.x
+    const b = pos1.z - pos2.z
+    return a * a + b * b
+}
+
 MovePlayer()
 
 function MovePlayer() {
@@ -80,15 +86,19 @@ export class SlerpRotate implements ISystem {
                 slerp.fraction += dt / 2
             }
         }
+
+        //distance
+        const camera = Camera.instance
+        if (distance(door.getComponent(Transform).position, camera.position) < 6) {
+            door.doIt = true;
+        }
+        if (distance(door_2.getComponent(Transform).position, camera.position) < 6) {
+            door_2.doIt = true;
+        }
     }
 }
 // Add system to engine
 engine.addSystem(new SlerpRotate())
-
-
-
-
-
 
 
 

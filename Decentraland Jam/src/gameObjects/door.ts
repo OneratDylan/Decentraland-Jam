@@ -30,6 +30,7 @@ export class Door extends Entity {
                 },
                 { hoverText: "Open Door" }
             )
-        )   
+        )  
+
     }
 }
