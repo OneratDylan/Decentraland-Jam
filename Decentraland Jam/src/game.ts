@@ -9,10 +9,10 @@ let y: number = 24;
 let roomSize: number = 10;
 
 CreateRoom1(new Vector3(x, 0, y));
-//CreateRoom2(new Vector3(x , 0, y - roomSize));
-//CreateRoom2(new Vector3(x, 0, y + roomSize));
-//CreateRoom2(new Vector3(x - roomSize, 0, y));
-//CreateRoom2(new Vector3(x + roomSize, 0, y));
+CreateRoom2(new Vector3(x , 0, y - roomSize));
+CreateRoom2(new Vector3(x, 0, y + roomSize));
+CreateRoom2(new Vector3(x - roomSize, 0, y));
+CreateRoom2(new Vector3(x + roomSize, 0, y));
 
 //Door One Init
 const door = new Door(
