@@ -17,18 +17,25 @@ export class Door extends Entity {
         super();
         engine.addEntity(this)
 
+        //model and pos
         this.addComponent(model)
         this.addComponent(new Transform({ position: pos }))
 
+        //slerp open close
         this.addComponent(new SlerpData())
         this.getComponent(SlerpData).originRot =
             Quaternion.Euler(startRot.x, startRot.y, startRot.z)
         this.getComponent(SlerpData).targetRot =
             Quaternion.Euler(endRot.x, endRot.y, endRot.z)
 
+        //animation
         this.addComponent(new Animator())
         this.getComponent(Animator).addClip(animationClip)
 
+        //audio
+        this.addComponent(new AudioSource(new AudioClip("Audio/door_close.mp3")))
+
+        //on click
         this.addComponent(
             new OnPointerDown(
                 (e) => {
