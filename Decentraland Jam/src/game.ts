@@ -1,6 +1,8 @@
 import { Door } from "./gameObjects/door";
 import { CreateRoom1 } from "./gameObjects/room_1"
 import { CreateRoom2 } from "./gameObjects/room_2"
+import { CreateRoom3 } from "./gameObjects/room_3"
+
 import { SlerpData } from "./customcomponents";
 
 /// --- Init Objs ---
@@ -10,7 +12,7 @@ let roomSize: number = 10;
 
 CreateRoom1(new Vector3(x, 0, y));
 CreateRoom2(new Vector3(x , 0, y - roomSize));
-CreateRoom2(new Vector3(x, 0, y + roomSize));
+CreateRoom3(new Vector3(x, 0, y + roomSize));
 CreateRoom2(new Vector3(x - roomSize, 0, y));
 CreateRoom2(new Vector3(x + roomSize, 0, y));
 
