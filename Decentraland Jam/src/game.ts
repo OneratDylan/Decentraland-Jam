@@ -17,38 +17,38 @@ CreateRoom1(new Vector3(x, 0, y));
 
 //Door One Init
 const door = new Door(
-    new GLTFShape("Models/Obj_Door_002.gltf.glb"),
+    new GLTFShape("Models/Obj_Door_001.gltf"),
     new Vector3(x, 0, y + (roomSize/2)),
     new Vector3(0, 0, 0),
     new Vector3(0, 90, 0),
-    new AnimationState("", { looping: false })
+    new AnimationState("Obj_Door_Open", { looping: false })
 );
 
 //Door Two Init
 const door_2 = new Door(
-    new GLTFShape("Models/Obj_Door_002.gltf.glb"),
+    new GLTFShape("Models/Obj_Door_001.gltf"),
     new Vector3(x, 0, y - (roomSize / 2)),
     new Vector3(0, 0, 0),
     new Vector3(0, 90, 0),
-    new AnimationState("", { looping: false })
+    new AnimationState("Obj_Door_Open", { looping: false })
 );
 
 //Door Three Init
 const door_3 = new Door(
-    new GLTFShape("Models/Obj_Door_002.gltf.glb"),
+    new GLTFShape("Models/Obj_Door_001.gltf"),
     new Vector3(x - (roomSize / 2), 0, y),
     new Vector3(0, 0, 0),
     new Vector3(0, 90, 0),
-    new AnimationState("", { looping: false })
+    new AnimationState("Obj_Door_Open", { looping: false })
 );
 
 //Door Three Init
 const door_4 = new Door(
-    new GLTFShape("Models/Obj_Door_002.gltf.glb"),
+    new GLTFShape("Models/Obj_Door_001.gltf"),
     new Vector3(x + (roomSize / 2), 0, y),
     new Vector3(0, 0, 0),
     new Vector3(0, 90, 0),
-    new AnimationState("", { looping: false })
+    new AnimationState("Obj_Door_Open", { looping: false })
 );
 
 function distance(pos1: Vector3, pos2: Vector3): number {

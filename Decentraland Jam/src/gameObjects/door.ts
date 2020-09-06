@@ -27,14 +27,15 @@ export class Door extends Entity {
             Quaternion.Euler(endRot.x, endRot.y, endRot.z)
 
         this.addComponent(new Animator())
-        this.getComponent(Animator).addClip(animationClip)
+        this.getComponent(Animator).addClip(new AnimationState("Obj_Door_Open", { looping: false }))
 
         this.addComponent(
             new OnPointerDown(
                 (e) => {
+                    this.getComponent(Animator).getClip("Obj_Door_Open").stop();  
+                    this.getComponent(Animator).getClip("Obj_Door_Open").play();  
                     this.getComponent(SlerpData).fraction = 0
                     this.Open = true;
-                    this.getComponent(Animator).getClip(animationClip.clip).play();  
                 },
                 { hoverText: "Open Door" }
             )
