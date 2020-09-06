@@ -65,7 +65,7 @@
                 ],
                 "glTF2ExportSettings" : {
                     "export_all_influences" : 0,
-                    "export_animations" : 1,
+                    "export_animations" : 0,
                     "export_apply" : 1,
                     "export_cameras" : 0,
                     "export_colors" : 1,
@@ -102,7 +102,7 @@
             },
             "name" : "Scene_Room01",
             "nodes" : [
-                2
+                1
             ]
         },
         {
@@ -276,50 +276,25 @@
     ],
     "nodes" : [
         {
+            "extras" : {
+                "BoolToolRoot" : 1
+            },
             "mesh" : 0,
-            "name" : "Obj_Door_001_collider"
-        },
-        {
-            "mesh" : 1,
-            "name" : "Obj_DoorHandle",
-            "translation" : [
-                -1.2589812278747559,
-                1.408474087715149,
-                -0.014474868774414062
-            ]
+            "name" : "Room_10x10_01_collider"
         },
         {
             "children" : [
-                0,
-                1
+                0
             ],
-            "mesh" : 2,
-            "name" : "Obj_Door_001",
+            "extras" : {
+                "BoolToolRoot" : 1
+            },
+            "mesh" : 1,
+            "name" : "Room_10x10_01",
             "translation" : [
-                0.7271248698234558,
-                0.012173019349575043,
-                7.894594669342041
-            ]
-        }
-    ],
-    "animations" : [
-        {
-            "channels" : [
-                {
-                    "sampler" : 0,
-                    "target" : {
-                        "node" : 1,
-                        "path" : "rotation"
-                    }
-                }
-            ],
-            "name" : "Obj_Door_Open",
-            "samplers" : [
-                {
-                    "input" : 12,
-                    "interpolation" : "LINEAR",
-                    "output" : 13
-                }
+                -2.896373748779297,
+                0.011807918548583984,
+                18.122621536254883
             ]
         }
     ],
@@ -331,7 +306,7 @@
                 0,
                 0
             ],
-            "name" : "Texture_Paint",
+            "name" : "Mat_Material",
             "pbrMetallicRoughness" : {
                 "baseColorTexture" : {
                     "index" : 0,
@@ -344,7 +319,7 @@
     ],
     "meshes" : [
         {
-            "name" : "Cube.033",
+            "name" : "Plane.010",
             "primitives" : [
                 {
                     "attributes" : {
@@ -357,7 +332,7 @@
             ]
         },
         {
-            "name" : "Cube.040",
+            "name" : "Plane.009",
             "primitives" : [
                 {
                     "attributes" : {
@@ -366,20 +341,6 @@
                         "TEXCOORD_0" : 6
                     },
                     "indices" : 7,
-                    "material" : 0
-                }
-            ]
-        },
-        {
-            "name" : "Cube.035",
-            "primitives" : [
-                {
-                    "attributes" : {
-                        "POSITION" : 8,
-                        "NORMAL" : 9,
-                        "TEXCOORD_0" : 10
-                    },
-                    "indices" : 11,
                     "material" : 0
                 }
             ]
@@ -401,200 +362,118 @@
         {
             "bufferView" : 0,
             "componentType" : 5126,
-            "count" : 24,
+            "count" : 498,
             "max" : [
-                0.014612019062042236,
-                2.5431649684906006,
-                0.20504455268383026
+                5.01500940322876,
+                4.636398792266846,
+                5.006217956542969
             ],
             "min" : [
-                -1.468833565711975,
-                -0.004353542346507311,
-                -0.20504452288150787
+                -5.01500940322876,
+                -0.011808156967163086,
+                -5.006217956542969
             ],
             "type" : "VEC3"
         },
         {
             "bufferView" : 1,
             "componentType" : 5126,
-            "count" : 24,
+            "count" : 498,
             "type" : "VEC3"
         },
         {
             "bufferView" : 2,
             "componentType" : 5126,
-            "count" : 24,
+            "count" : 498,
             "type" : "VEC2"
         },
         {
             "bufferView" : 3,
             "componentType" : 5123,
-            "count" : 36,
+            "count" : 840,
             "type" : "SCALAR"
         },
         {
             "bufferView" : 4,
             "componentType" : 5126,
-            "count" : 176,
+            "count" : 484,
             "max" : [
-                0.057089805603027344,
-                0.05918228626251221,
-                0.16708797216415405
+                5.01500940322876,
+                4.617306232452393,
+                5.006217956542969
             ],
             "min" : [
-                -0.057089805603027344,
-                -0.326532244682312,
-                -0.16708797216415405
+                -5.01500940322876,
+                -0.011807918548583984,
+                -5.006217956542969
             ],
             "type" : "VEC3"
         },
         {
             "bufferView" : 5,
             "componentType" : 5126,
-            "count" : 176,
+            "count" : 484,
             "type" : "VEC3"
         },
         {
             "bufferView" : 6,
             "componentType" : 5126,
-            "count" : 176,
+            "count" : 484,
             "type" : "VEC2"
         },
         {
             "bufferView" : 7,
             "componentType" : 5123,
-            "count" : 264,
+            "count" : 840,
             "type" : "SCALAR"
-        },
-        {
-            "bufferView" : 8,
-            "componentType" : 5126,
-            "count" : 66,
-            "max" : [
-                0.014612019062042236,
-                2.5431649684906006,
-                0.08167967945337296
-            ],
-            "min" : [
-                -1.468833565711975,
-                -0.004353542346507311,
-                -0.09913093596696854
-            ],
-            "type" : "VEC3"
-        },
-        {
-            "bufferView" : 9,
-            "componentType" : 5126,
-            "count" : 66,
-            "type" : "VEC3"
-        },
-        {
-            "bufferView" : 10,
-            "componentType" : 5126,
-            "count" : 66,
-            "type" : "VEC2"
-        },
-        {
-            "bufferView" : 11,
-            "componentType" : 5123,
-            "count" : 156,
-            "type" : "SCALAR"
-        },
-        {
-            "bufferView" : 12,
-            "componentType" : 5126,
-            "count" : 13,
-            "max" : [
-                0.4
-            ],
-            "min" : [
-                0
-            ],
-            "type" : "SCALAR"
-        },
-        {
-            "bufferView" : 13,
-            "componentType" : 5126,
-            "count" : 13,
-            "type" : "VEC4"
         }
     ],
     "bufferViews" : [
         {
             "buffer" : 0,
-            "byteLength" : 288,
+            "byteLength" : 5976,
             "byteOffset" : 0
         },
         {
             "buffer" : 0,
-            "byteLength" : 288,
-            "byteOffset" : 288
+            "byteLength" : 5976,
+            "byteOffset" : 5976
         },
         {
             "buffer" : 0,
-            "byteLength" : 192,
-            "byteOffset" : 576
+            "byteLength" : 3984,
+            "byteOffset" : 11952
         },
         {
             "buffer" : 0,
-            "byteLength" : 72,
-            "byteOffset" : 768
+            "byteLength" : 1680,
+            "byteOffset" : 15936
         },
         {
             "buffer" : 0,
-            "byteLength" : 2112,
-            "byteOffset" : 840
+            "byteLength" : 5808,
+            "byteOffset" : 17616
         },
         {
             "buffer" : 0,
-            "byteLength" : 2112,
-            "byteOffset" : 2952
+            "byteLength" : 5808,
+            "byteOffset" : 23424
         },
         {
             "buffer" : 0,
-            "byteLength" : 1408,
-            "byteOffset" : 5064
+            "byteLength" : 3872,
+            "byteOffset" : 29232
         },
         {
             "buffer" : 0,
-            "byteLength" : 528,
-            "byteOffset" : 6472
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 792,
-            "byteOffset" : 7000
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 792,
-            "byteOffset" : 7792
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 528,
-            "byteOffset" : 8584
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 312,
-            "byteOffset" : 9112
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 52,
-            "byteOffset" : 9424
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 208,
-            "byteOffset" : 9476
+            "byteLength" : 1680,
+            "byteOffset" : 33104
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 9684,
-            "uri" : "Obj_Door_001.bin"
+            "byteLength" : 34784,
+            "uri" : "Room_10x10_01.bin"
         }
     ]
 }
