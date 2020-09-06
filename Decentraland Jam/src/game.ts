@@ -1,25 +1,12 @@
 import { Door } from "./gameObjects/door";
-import { CreateRoom1 } from "./gameObjects/room_1"
-import { CreateRoom2 } from "./gameObjects/room_2"
-import { CreateRoom3 } from "./gameObjects/room_3"
-import { CreateRoom4 } from "./gameObjects/room_4"
+import { roomManager } from "./gameObjects/roomManager"
 
 /// --- Init Objs ---
 let x: number = 24;
 let y: number = 24;
 let roomSize: number = 10;
 
-let randomVal: number
-randomVal = Scalar.RandomRange(0, 5)
-CreateRoom1(new Vector3(x, 0, y));
-CreateRoom2(new Vector3(x , 0, y - roomSize));
-CreateRoom3(new Vector3(x, 0, y + roomSize));
-CreateRoom4(new Vector3(x - roomSize, 0, y));
-CreateRoom2(new Vector3(x + roomSize, 0, y));
-CreateRoom2(new Vector3(x + roomSize, 0, y + roomSize));
-CreateRoom2(new Vector3(x + roomSize, 0, y - roomSize));
-CreateRoom2(new Vector3(x - roomSize, 0, y - roomSize));
-CreateRoom2(new Vector3(x - roomSize, 0, y + roomSize));
+engine.addSystem(new roomManager())
 
 engine.addSystem(new Door(
     new GLTFShape("Models/Obj_Door_001.gltf"),
