@@ -1,7 +1,16 @@
-export function CreateRoom4(pos: Vector3): void {
+export class Room_4 extends Entity {
+    // public vars
 
-    const Room2 = new Entity()
-    engine.addEntity(Room2)
-    Room2.addComponent(new GLTFShape("Models/Room_10x10_04.gltf"))
-    Room2.addComponent(new Transform({ position: pos }))
+
+    //init
+    constructor(
+        //local vars
+        pos: Vector3
+    ) {
+        //init this
+        super();
+        engine.addEntity(this)
+        this.addComponent(new GLTFShape("Models/Room_10x10_04.gltf"))
+        this.addComponent(new Transform({ position: pos }))
+    }
 }

@@ -1,9 +1,6 @@
 export function CreateRoom1(pos: Vector3): void {
 
-    const testCube = new Entity()
-    engine.addEntity(testCube)
-    testCube.addComponent(new GLTFShape("Models/Room_10x10_01.gltf"))
-    testCube.addComponent(new Transform({ position: pos }))
+
 
     //const Statue = new Entity()
     //engine.addEntity(Statue)
@@ -54,4 +51,23 @@ export function CreateRoom1(pos: Vector3): void {
     //engine.addEntity(Light)
     //Light.addComponent(new GLTFShape("Models/Obj_Light_CeilingLamp_005.gltf"))
     //Light.addComponent(new Transform({ position: pos }))
+
+}
+
+
+export class Room_1 extends Entity {
+    // public vars
+
+
+    //init
+    constructor(
+        //local vars
+        pos: Vector3
+    ) {
+        //init this
+        super();
+        engine.addEntity(this)
+        this.addComponent(new GLTFShape("Models/Room_10x10_01.gltf"))
+        this.addComponent(new Transform({ position: pos }))
+    }
 }
