@@ -2,24 +2,28 @@ import { SlerpData } from "customcomponents";
 
 export class Door extends Entity {
 
+    // public vars
     public Open: boolean = false;
     public IsClosing: boolean = false;
 
     constructor(
+        //local vars
         model: GLTFShape,
         pos: Vector3,
-
         startRot: Vector3,
         endRot: Vector3,
-
         animationClip: AnimationState
     ) {
+        //init this
         super();
         engine.addEntity(this)
 
         //model and pos
         this.addComponent(model)
-        this.addComponent(new Transform({ position: pos }))
+        this.addComponent(new Transform({
+            position: pos,
+            rotation: Quaternion.Euler(startRot.x, startRot.y, startRot.z)
+        }))
 
         //slerp open close
         this.addComponent(new SlerpData())
