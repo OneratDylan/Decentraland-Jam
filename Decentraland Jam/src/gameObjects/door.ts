@@ -1,11 +1,13 @@
 import { SlerpData } from "customcomponents";
+import { distance } from "customcomponents";
 
-export class Door extends Entity {
+export class Door extends Entity implements ISystem{
 
     // public vars
     public Open: boolean = false;
     public IsClosing: boolean = false;
 
+    //init
     constructor(
         //local vars
         model: GLTFShape,
@@ -50,8 +52,54 @@ export class Door extends Entity {
                 },
                 { hoverText: "Open Door" }
             )
-        )  
+        )      
+    }
 
+    //update
+    update(dt: number) {
+        if (this.Open) {
+
+            let slerp = this.getComponent(SlerpData)
+            let transform = this.getComponent(Transform)
+            if (slerp.fraction < 1) {
+                let rot = Quaternion.Slerp(
+                    slerp.originRot,
+                    slerp.targetRot,
+                    slerp.fraction
+                )
+                transform.rotation = rot
+                slerp.fraction += dt / 2
+            }
+        }
+
+        const camera = Camera.instance
+        if (distance(this.getComponent(Transform).position, camera.position) > 15) {
+            if (this.Open) {
+                this.Open = false
+                this.getComponent(SlerpData).fraction = 0;
+                this.IsClosing = true
+            }
+            else if (this.IsClosing) {
+                let slerp = this.getComponent(SlerpData)
+                let transform = this.getComponent(Transform)
+                if (slerp.fraction < 1) {
+                    let rot = Quaternion.Slerp(
+                        Quaternion.Euler(transform.eulerAngles.x,
+                            transform.eulerAngles.y,
+                            transform.eulerAngles.z),
+                        slerp.originRot,
+                        slerp.fraction
+                    )
+                    transform.rotation = rot
+                    slerp.fraction += dt / 2
+                }
+            }
+            if (this.getComponent(SlerpData).fraction >= 1) {
+                this.getComponent(SlerpData).fraction = 0;
+                this.IsClosing = false
+                this.getComponent(AudioSource).playOnce()
+            }
+        }
 
     }
 }
