@@ -138,6 +138,7 @@ export class DoorUpdate implements ISystem {
             if (door.getComponent(SlerpData).fraction >= 1) {
                 door.getComponent(SlerpData).fraction = 0;
                 door.IsClosing = false
+                door.getComponent(AudioSource).playOnce()
             }
         }
 
@@ -165,6 +166,7 @@ export class DoorUpdate implements ISystem {
             if (door_2.getComponent(SlerpData).fraction >= 1) {
                 door_2.getComponent(SlerpData).fraction = 0;
                 door_2.IsClosing = false
+                door_2.getComponent(AudioSource).playOnce()
             }
         }
     }
