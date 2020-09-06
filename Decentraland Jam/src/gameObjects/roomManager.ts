@@ -39,14 +39,5 @@ export class roomManager extends Entity implements ISystem
 
     update(dt: number) {
 
-        input.subscribe("BUTTON_DOWN", ActionButton.SECONDARY, false, (e) => {
-            engine.removeEntity(room1)
-            engine.removeEntity(room2)
-            engine.removeEntity(room3)
-            engine.removeEntity(room4)
-            engine.removeEntity(room5)
-            engine.removeEntity(room6)
-            engine.removeEntity(room7)
-        })
     }
 }
