@@ -277,7 +277,7 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "Obj_Door_001_collider",
+            "name" : "Obj_Door_004_collider",
             "translation" : [
                 0,
                 0.0017419252544641495,
@@ -286,9 +286,9 @@
         },
         {
             "mesh" : 1,
-            "name" : "Obj_DoorHandle",
+            "name" : "Obj_DoorHandle.004",
             "translation" : [
-                -1.2589812278747559,
+                -1.342655897140503,
                 1.4102160930633545,
                 -0.014474868774414062
             ]
@@ -299,7 +299,7 @@
                 1
             ],
             "mesh" : 2,
-            "name" : "Obj_Door_001"
+            "name" : "Obj_Door_004"
         }
     ],
     "animations" : [
@@ -319,6 +319,63 @@
                     "input" : 12,
                     "interpolation" : "LINEAR",
                     "output" : 13
+                }
+            ]
+        },
+        {
+            "channels" : [
+                {
+                    "sampler" : 0,
+                    "target" : {
+                        "node" : 1,
+                        "path" : "rotation"
+                    }
+                }
+            ],
+            "name" : "Obj_Door_Open.001",
+            "samplers" : [
+                {
+                    "input" : 12,
+                    "interpolation" : "LINEAR",
+                    "output" : 14
+                }
+            ]
+        },
+        {
+            "channels" : [
+                {
+                    "sampler" : 0,
+                    "target" : {
+                        "node" : 1,
+                        "path" : "rotation"
+                    }
+                }
+            ],
+            "name" : "Obj_Door_Open.002",
+            "samplers" : [
+                {
+                    "input" : 12,
+                    "interpolation" : "LINEAR",
+                    "output" : 15
+                }
+            ]
+        },
+        {
+            "channels" : [
+                {
+                    "sampler" : 0,
+                    "target" : {
+                        "node" : 1,
+                        "path" : "rotation"
+                    }
+                }
+            ],
+            "name" : "Obj_Door_Open.003",
+            "samplers" : [
+                {
+                    "input" : 12,
+                    "interpolation" : "LINEAR",
+                    "output" : 16
                 }
             ]
         }
@@ -344,7 +401,7 @@
     ],
     "meshes" : [
         {
-            "name" : "Cube.033",
+            "name" : "Cube.195",
             "primitives" : [
                 {
                     "attributes" : {
@@ -357,7 +414,7 @@
             ]
         },
         {
-            "name" : "Cube.040",
+            "name" : "Cube.196",
             "primitives" : [
                 {
                     "attributes" : {
@@ -371,7 +428,7 @@
             ]
         },
         {
-            "name" : "Cube.035",
+            "name" : "Cube.194",
             "primitives" : [
                 {
                     "attributes" : {
@@ -435,15 +492,15 @@
         {
             "bufferView" : 4,
             "componentType" : 5126,
-            "count" : 176,
+            "count" : 264,
             "max" : [
-                0.057089805603027344,
+                0.07028824090957642,
                 0.05918228626251221,
                 0.16708797216415405
             ],
             "min" : [
-                -0.057089805603027344,
-                -0.326532244682312,
+                -0.07028302550315857,
+                -0.11863215267658234,
                 -0.16708797216415405
             ],
             "type" : "VEC3"
@@ -451,53 +508,53 @@
         {
             "bufferView" : 5,
             "componentType" : 5126,
-            "count" : 176,
+            "count" : 264,
             "type" : "VEC3"
         },
         {
             "bufferView" : 6,
             "componentType" : 5126,
-            "count" : 176,
+            "count" : 264,
             "type" : "VEC2"
         },
         {
             "bufferView" : 7,
             "componentType" : 5123,
-            "count" : 264,
+            "count" : 396,
             "type" : "SCALAR"
         },
         {
             "bufferView" : 8,
             "componentType" : 5126,
-            "count" : 66,
+            "count" : 1306,
             "max" : [
                 0.014612019062042236,
                 2.5471465587615967,
-                0.08167967945337296
+                0.09708497673273087
             ],
             "min" : [
                 -1.468833565711975,
                 -0.0003719986416399479,
-                -0.09913093596696854
+                -0.11072155833244324
             ],
             "type" : "VEC3"
         },
         {
             "bufferView" : 9,
             "componentType" : 5126,
-            "count" : 66,
+            "count" : 1306,
             "type" : "VEC3"
         },
         {
             "bufferView" : 10,
             "componentType" : 5126,
-            "count" : 66,
+            "count" : 1306,
             "type" : "VEC2"
         },
         {
             "bufferView" : 11,
             "componentType" : 5123,
-            "count" : 156,
+            "count" : 1956,
             "type" : "SCALAR"
         },
         {
@@ -514,6 +571,24 @@
         },
         {
             "bufferView" : 13,
+            "componentType" : 5126,
+            "count" : 19,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 14,
+            "componentType" : 5126,
+            "count" : 19,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 15,
+            "componentType" : 5126,
+            "count" : 19,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 16,
             "componentType" : 5126,
             "count" : 19,
             "type" : "VEC4"
@@ -542,59 +617,74 @@
         },
         {
             "buffer" : 0,
-            "byteLength" : 2112,
+            "byteLength" : 3168,
             "byteOffset" : 840
         },
         {
             "buffer" : 0,
+            "byteLength" : 3168,
+            "byteOffset" : 4008
+        },
+        {
+            "buffer" : 0,
             "byteLength" : 2112,
-            "byteOffset" : 2952
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 1408,
-            "byteOffset" : 5064
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 528,
-            "byteOffset" : 6472
+            "byteOffset" : 7176
         },
         {
             "buffer" : 0,
             "byteLength" : 792,
-            "byteOffset" : 7000
+            "byteOffset" : 9288
         },
         {
             "buffer" : 0,
-            "byteLength" : 792,
-            "byteOffset" : 7792
+            "byteLength" : 15672,
+            "byteOffset" : 10080
         },
         {
             "buffer" : 0,
-            "byteLength" : 528,
-            "byteOffset" : 8584
+            "byteLength" : 15672,
+            "byteOffset" : 25752
         },
         {
             "buffer" : 0,
-            "byteLength" : 312,
-            "byteOffset" : 9112
+            "byteLength" : 10448,
+            "byteOffset" : 41424
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3912,
+            "byteOffset" : 51872
         },
         {
             "buffer" : 0,
             "byteLength" : 76,
-            "byteOffset" : 9424
+            "byteOffset" : 55784
         },
         {
             "buffer" : 0,
             "byteLength" : 304,
-            "byteOffset" : 9500
+            "byteOffset" : 55860
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 304,
+            "byteOffset" : 56164
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 304,
+            "byteOffset" : 56468
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 304,
+            "byteOffset" : 56772
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 9804,
-            "uri" : "Obj_Door_001.bin"
+            "byteLength" : 57076,
+            "uri" : "Obj_Door_004.bin"
         }
     ]
 }

@@ -277,7 +277,7 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "Obj_Door_001_collider",
+            "name" : "Obj_Door_005_collider",
             "translation" : [
                 0,
                 0.0017419252544641495,
@@ -286,7 +286,7 @@
         },
         {
             "mesh" : 1,
-            "name" : "Obj_DoorHandle",
+            "name" : "Obj_DoorHandle.005",
             "translation" : [
                 -1.2589812278747559,
                 1.4102160930633545,
@@ -299,7 +299,7 @@
                 1
             ],
             "mesh" : 2,
-            "name" : "Obj_Door_001"
+            "name" : "Obj_Door_005"
         }
     ],
     "animations" : [
@@ -319,6 +319,25 @@
                     "input" : 12,
                     "interpolation" : "LINEAR",
                     "output" : 13
+                }
+            ]
+        },
+        {
+            "channels" : [
+                {
+                    "sampler" : 0,
+                    "target" : {
+                        "node" : 1,
+                        "path" : "rotation"
+                    }
+                }
+            ],
+            "name" : "Obj_Door_Open.004",
+            "samplers" : [
+                {
+                    "input" : 12,
+                    "interpolation" : "LINEAR",
+                    "output" : 14
                 }
             ]
         }
@@ -344,7 +363,7 @@
     ],
     "meshes" : [
         {
-            "name" : "Cube.033",
+            "name" : "Cube.198",
             "primitives" : [
                 {
                     "attributes" : {
@@ -357,7 +376,7 @@
             ]
         },
         {
-            "name" : "Cube.040",
+            "name" : "Cube.199",
             "primitives" : [
                 {
                     "attributes" : {
@@ -371,7 +390,7 @@
             ]
         },
         {
-            "name" : "Cube.035",
+            "name" : "Cube.197",
             "primitives" : [
                 {
                     "attributes" : {
@@ -517,6 +536,12 @@
             "componentType" : 5126,
             "count" : 19,
             "type" : "VEC4"
+        },
+        {
+            "bufferView" : 14,
+            "componentType" : 5126,
+            "count" : 19,
+            "type" : "VEC4"
         }
     ],
     "bufferViews" : [
@@ -589,12 +614,17 @@
             "buffer" : 0,
             "byteLength" : 304,
             "byteOffset" : 9500
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 304,
+            "byteOffset" : 9804
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 9804,
-            "uri" : "Obj_Door_001.bin"
+            "byteLength" : 10108,
+            "uri" : "Obj_Door_005.bin"
         }
     ]
 }
