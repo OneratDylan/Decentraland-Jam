@@ -1,25 +1,38 @@
 import { SlerpData } from "customcomponents";
+import { distance } from "customcomponents";
 
-export class Door extends Entity {
+let doorMeshes: Array<string> =
+    [
+        "Models/Obj_Door_001.gltf",
+        "Models/Obj_Door_002.gltf",
+        "Models/Obj_Door_003.gltf",
+        "Models/Obj_Door_004.gltf",
+        "Models/Obj_Door_005.gltf",
+    ];
+
+export class Door extends Entity implements ISystem{
 
     // public vars
     public Open: boolean = false;
     public IsClosing: boolean = false;
+    public isLocked: boolean = false;
 
+    //init
     constructor(
         //local vars
-        model: GLTFShape,
         pos: Vector3,
         startRot: Vector3,
         endRot: Vector3,
-        animationClip: AnimationState
+        locked: boolean
     ) {
         //init this
         super();
         engine.addEntity(this)
 
+        this.isLocked = locked;
+
         //model and pos
-        this.addComponent(model)
+        this.addComponent(new GLTFShape(doorMeshes[Math.round( Scalar.RandomRange(0, doorMeshes.length - 1))]))
         this.addComponent(new Transform({
             position: pos,
             rotation: Quaternion.Euler(startRot.x, startRot.y, startRot.z)
@@ -34,24 +47,80 @@ export class Door extends Entity {
 
         //animation
         this.addComponent(new Animator())
-        this.getComponent(Animator).addClip(animationClip)
+        this.getComponent(Animator).addClip(new AnimationState("Obj_Door_Open", { looping: false}))
 
-        //audio
-        this.addComponent(new AudioSource(new AudioClip("Audio/door_close.mp3")))
 
         //on click
-        this.addComponent(
-            new OnPointerDown(
-                (e) => {
-                    this.getComponent(Animator).getClip(animationClip.clip).stop();  
-                    this.getComponent(Animator).getClip(animationClip.clip).play();  
-                    this.getComponent(SlerpData).fraction = 0
-                    this.Open = true;
-                },
-                { hoverText: "Open Door" }
-            )
-        )  
+        if (!this.isLocked) {
 
+            this.addComponent(
+                new OnPointerDown(
+                    (e) => {
+                        this.getComponent(Animator).getClip("Obj_Door_Open").stop();
+                        this.getComponent(Animator).getClip("Obj_Door_Open").play();
+                        this.getComponent(SlerpData).fraction = 0
+                        this.Open = true;
+
+                        this.addComponentOrReplace(new AudioSource(new AudioClip("Audio/Door_Open.mp3")))
+                        this.getComponent(AudioSource).playOnce()
+                    },
+                    {
+                        hoverText: "Open Door",
+                        distance: 4
+                    }
+                )
+            )
+        }
+    }
+
+    //update
+    update(dt: number) {
+        if (this.Open) {
+
+
+            let slerp = this.getComponent(SlerpData)
+            let transform = this.getComponent(Transform)
+            if (slerp.fraction < 1) {
+                let rot = Quaternion.Slerp(
+                    slerp.originRot,
+                    slerp.targetRot,
+                    slerp.fraction
+                )
+                transform.rotation = rot
+                slerp.fraction += dt / 2
+            }
+        }
+
+        const camera = Camera.instance
+        if (distance(this.getComponent(Transform).position, camera.position) > 15) {
+            if (this.Open) {
+                this.Open = false
+                this.getComponent(SlerpData).fraction = 0;
+                this.IsClosing = true
+            }
+            else if (this.IsClosing) {
+                let slerp = this.getComponent(SlerpData)
+                let transform = this.getComponent(Transform)
+                if (slerp.fraction < 1) {
+                    let rot = Quaternion.Slerp(
+                        Quaternion.Euler(transform.eulerAngles.x,
+                            transform.eulerAngles.y,
+                            transform.eulerAngles.z),
+                        slerp.originRot,
+                        slerp.fraction
+                    )
+                    transform.rotation = rot
+                    slerp.fraction += dt / 2
+                }
+            }
+            if (this.getComponent(SlerpData).fraction >= .35) {
+                this.getComponent(SlerpData).fraction = 0;
+                this.IsClosing = false
+
+                this.addComponentOrReplace(new AudioSource(new AudioClip("Audio/Door_Close_Alt.mp3")))
+                this.getComponent(AudioSource).playOnce()
+            }
+        }
 
     }
 }
