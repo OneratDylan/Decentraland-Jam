@@ -13,17 +13,20 @@ engine.addSystem(new roomManager())
 engine.addSystem(new Door(
     new Vector3(x - .79, 0, y + (roomSize / 2)),
     new Vector3(0, 0, 0),
-    new Vector3(0, 90, 0)))
+    new Vector3(0, 90, 0),
+    false))
 
 engine.addSystem(new Door(
     new Vector3(x - .79 + roomSize, 0, y + (roomSize / 2)),
     new Vector3(0, 0, 0),
-    new Vector3(0, 90, 0)))
+    new Vector3(0, 90, 0),
+    false))
 
 engine.addSystem(new Door(
     new Vector3(x - .79 - roomSize, 0, y + (roomSize / 2)),
     new Vector3(0, 0, 0),
-    new Vector3(0, 90, 0)))
+    new Vector3(0, 90, 0),
+    false))
 //inner top end
 
 //inner bottom start
@@ -31,17 +34,20 @@ engine.addSystem(new Door(
 engine.addSystem(new Door(
     new Vector3(x - .79, 0, y - (roomSize / 2)),
     new Vector3(0, 0, 0),
-    new Vector3(0, 90, 0)))
+    new Vector3(0, 90, 0),
+    false))
 
 engine.addSystem(new Door(
     new Vector3(x - .79 + roomSize, 0, y - (roomSize / 2)),
     new Vector3(0, 0, 0),
-    new Vector3(0, 90, 0)))
+    new Vector3(0, 90, 0),
+    false))
 
 engine.addSystem(new Door(
     new Vector3(x - .79 - roomSize, 0, y - (roomSize / 2)),
     new Vector3(0, 0, 0),
-    new Vector3(0, 90, 0)))
+    new Vector3(0, 90, 0),
+    false))
 //inner bottom end
 
 //inner left start
@@ -49,17 +55,20 @@ engine.addSystem(new Door(
 engine.addSystem(new Door(
     new Vector3(x - (roomSize / 2), 0, y + .79),
     new Vector3(0, 90, 0),
-    new Vector3(0, 0, 0)))
+    new Vector3(0, 0, 0),
+    false))
 
 engine.addSystem(new Door(
     new Vector3(x - (roomSize / 2), 0, y + .79 + roomSize),
     new Vector3(0, 90, 0),
-    new Vector3(0, 0, 0)))
+    new Vector3(0, 0, 0),
+    false))
 
 engine.addSystem(new Door(
     new Vector3(x - (roomSize / 2), 0, y + .79 - roomSize),
     new Vector3(0, 90, 0),
-    new Vector3(0, 0, 0)))
+    new Vector3(0, 0, 0),
+    false))
 //inner left end
 
 //inner right start
@@ -67,17 +76,20 @@ engine.addSystem(new Door(
 engine.addSystem(new Door(
     new Vector3(x + (roomSize / 2), 0, y + .79),
     new Vector3(0, 90, 0),
-    new Vector3(0, 0, 0)))
+    new Vector3(0, 0, 0),
+    false))
 
 engine.addSystem(new Door(
     new Vector3(x + (roomSize / 2), 0, y + .79 - roomSize),
     new Vector3(0, 90, 0),
-    new Vector3(0, 0, 0)))
+    new Vector3(0, 0, 0),
+    false))
 
 engine.addSystem(new Door(
     new Vector3(x + (roomSize / 2), 0, y + .79 + roomSize),
     new Vector3(0, 90, 0),
-    new Vector3(0, 0, 0)))
+    new Vector3(0, 0, 0),
+    false))
 //inner right end
 
 //out right start
@@ -85,17 +97,20 @@ engine.addSystem(new Door(
 engine.addSystem(new Door(
     new Vector3(x + (roomSize / 2) * 3, 0, y + .79),
     new Vector3(0, 90, 0),
-    new Vector3(0, 0, 0)))
+    new Vector3(0, 0, 0),
+    true))
 
 engine.addSystem(new Door(
     new Vector3(x + (roomSize / 2) * 3, 0, y + .79 + roomSize),
     new Vector3(0, 90, 0),
-    new Vector3(0, 0, 0)))
+    new Vector3(0, 0, 0),
+    true))
 
 engine.addSystem(new Door(
     new Vector3(x + (roomSize / 2) * 3, 0, y + .79 - roomSize),
     new Vector3(0, 90, 0),
-    new Vector3(0, 0, 0)))
+    new Vector3(0, 0, 0),
+    true))
 //out right end 
 
 //out left start
@@ -103,17 +118,20 @@ engine.addSystem(new Door(
 engine.addSystem(new Door(
     new Vector3(x - (roomSize / 2) *3, 0, y + .79),
     new Vector3(0, 90, 0),
-    new Vector3(0, 0, 0)))
+    new Vector3(0, 0, 0),
+    true))
 
 engine.addSystem(new Door(
     new Vector3(x - (roomSize / 2) * 3, 0, y + .79 + roomSize),
     new Vector3(0, 90, 0),
-    new Vector3(0, 0, 0)))
+    new Vector3(0, 0, 0),
+    true))
 
 engine.addSystem(new Door(
     new Vector3(x - (roomSize / 2) * 3, 0, y + .79 - roomSize),
     new Vector3(0, 90, 0),
-    new Vector3(0, 0, 0)))
+    new Vector3(0, 0, 0),
+    true))
 //out left end
 
 //out top start
@@ -121,17 +139,20 @@ engine.addSystem(new Door(
 engine.addSystem(new Door(
     new Vector3(x - .79, 0, y + (roomSize / 2) * 3),
     new Vector3(0, 0, 0),
-    new Vector3(0, 90, 0)))
+    new Vector3(0, 90, 0),
+    true))
 
 engine.addSystem(new Door(
     new Vector3(x - .79 - roomSize, 0, y + (roomSize / 2) * 3),
     new Vector3(0, 0, 0),
-    new Vector3(0, 90, 0)))
+    new Vector3(0, 90, 0),
+    true))
 
 engine.addSystem(new Door(
     new Vector3(x - .79 + roomSize, 0, y + (roomSize / 2) * 3),
     new Vector3(0, 0, 0),
-    new Vector3(0, 90, 0)))
+    new Vector3(0, 90, 0),
+    true))
 //out top end
 
 //out bottom start 
@@ -139,19 +160,22 @@ engine.addSystem(new Door(
 engine.addSystem(new Door(
     new Vector3(x - .79, 0, y - (roomSize / 2) * 3),
     new Vector3(0, 0, 0),
-    new Vector3(0, 90, 0)))
+    new Vector3(0, 90, 0),
+    false))
 
 //Door eight Init
 engine.addSystem(new Door(
     new Vector3(x - .79 - (roomSize), 0, y - (roomSize / 2) * 3),
     new Vector3(0, 0, 0),
-    new Vector3(0, 90, 0)))
+    new Vector3(0, 90, 0),
+    true))
 
 //Door nine Init
 engine.addSystem(new Door(
     new Vector3(x - .79 + (roomSize), 0, y - (roomSize / 2) * 3),
     new Vector3(0, 0, 0),
-    new Vector3(0, 90, 0)))
+    new Vector3(0, 90, 0),
+    true))
 //out bottom end 
 
 MovePlayer()

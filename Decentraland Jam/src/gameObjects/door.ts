@@ -1,8 +1,6 @@
 import { SlerpData } from "customcomponents";
 import { distance } from "customcomponents";
 
-
-
 let doorMeshes: Array<string> =
     [
         "Models/Obj_Door_001.gltf",
@@ -10,7 +8,6 @@ let doorMeshes: Array<string> =
         "Models/Obj_Door_003.gltf",
         "Models/Obj_Door_004.gltf",
         "Models/Obj_Door_005.gltf",
-
     ];
 
 export class Door extends Entity implements ISystem{
@@ -18,6 +15,7 @@ export class Door extends Entity implements ISystem{
     // public vars
     public Open: boolean = false;
     public IsClosing: boolean = false;
+    public isLocked: boolean = false;
 
     //init
     constructor(
@@ -25,10 +23,13 @@ export class Door extends Entity implements ISystem{
         pos: Vector3,
         startRot: Vector3,
         endRot: Vector3,
+        locked: boolean
     ) {
         //init this
         super();
         engine.addEntity(this)
+
+        this.isLocked = locked;
 
         //model and pos
         this.addComponent(new GLTFShape(doorMeshes[Math.round( Scalar.RandomRange(0, doorMeshes.length - 1))]))
@@ -52,19 +53,23 @@ export class Door extends Entity implements ISystem{
         this.addComponent(new AudioSource(new AudioClip("Audio/Door_Open.mp3")))
 
         //on click
-        this.addComponent(
-            new OnPointerDown(
-                (e) => {
-                    this.getComponent(Animator).getClip("Obj_Door_Open").stop();  
-                    this.getComponent(Animator).getClip("Obj_Door_Open").play();  
-                    this.getComponent(SlerpData).fraction = 0
-                    this.Open = true;
-                    this.getComponent(AudioSource).playOnce()
+        if (!this.isLocked) {
 
-                },
-                { hoverText: "Open Door" }
+            this.addComponent(
+                new OnPointerDown(
+                    (e) => {
+                        this.getComponent(Animator).getClip("Obj_Door_Open").stop();
+                        this.getComponent(Animator).getClip("Obj_Door_Open").play();
+                        this.getComponent(SlerpData).fraction = 0
+                        this.Open = true;
+                        this.getComponent(AudioSource).playOnce()
+
+
+                    },
+                    { hoverText: "Open Door" }
+                )
             )
-        )      
+        }
     }
 
     //update
