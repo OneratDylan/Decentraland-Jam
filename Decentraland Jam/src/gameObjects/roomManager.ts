@@ -37,43 +37,34 @@ export class roomManager extends Entity implements ISystem
     }
 
     update() {
-        if (room1.isInRoom == true) {
-            engine.removeEntity(room1);
-        }
-        if (room2.isInRoom == true) {
-            engine.removeEntity(room2);
-        }
-        if (room3.isInRoom == true) {
-            engine.removeEntity(room3);
-        }
-        if (room4.isInRoom == true) {
-            engine.removeEntity(room4);
-        }
-        if (room5.isInRoom == true) {
-            engine.removeEntity(room5);
-        }
-        if (room6.isInRoom == true) {
-            engine.removeEntity(room6);
-        }
-        if (room7.isInRoom == true) {
-            engine.removeEntity(room7);
-        }
-        if (room8.isInRoom == true) {
-            engine.removeEntity(room8);
-        }
-        if (room9.isInRoom == true) {
-            engine.removeEntity(room9);
-        }
+        //if (room1.isInRoom == true) {
+        //    engine.removeEntity(room1);
+        //}
+        //if (room2.isInRoom == true) {
+        //    engine.removeEntity(room2);
+        //}
+        //if (room3.isInRoom == true) {
+        //    engine.removeEntity(room3);
+        //}
+        //if (room4.isInRoom == true) {
+        //    engine.removeEntity(room4);
+        //}
+        //if (room5.isInRoom == true) {
+        //    engine.removeEntity(room5);
+        //}
+        //if (room6.isInRoom == true) {
+        //    engine.removeEntity(room6);
+        //}
+        //if (room7.isInRoom == true) {
+        //    engine.removeEntity(room7);
+        //}
+        //if (room8.isInRoom == true) {
+        //    engine.removeEntity(room8);
+        //}
+        //if (room9.isInRoom == true) {
+        //    engine.removeEntity(room9);
+        //}
     }
 
 
 }
-
-// Instance the input object
-const input = Input.instance
-
-// button down event
-input.subscribe("BUTTON_DOWN", ActionButton.SECONDARY, false, (e) => {
-    engine.removeEntity(room1);
-
-})

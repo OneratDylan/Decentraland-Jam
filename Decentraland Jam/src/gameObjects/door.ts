@@ -1,6 +1,18 @@
 import { SlerpData } from "customcomponents";
 import { distance } from "customcomponents";
 
+
+
+let doorMeshes: Array<string> =
+    [
+        "Models/Obj_Door_001.gltf",
+        "Models/Obj_Door_002.gltf",
+        "Models/Obj_Door_003.gltf",
+        "Models/Obj_Door_004.gltf",
+        "Models/Obj_Door_005.gltf",
+
+    ];
+
 export class Door extends Entity implements ISystem{
 
     // public vars
@@ -10,18 +22,16 @@ export class Door extends Entity implements ISystem{
     //init
     constructor(
         //local vars
-        model: GLTFShape,
         pos: Vector3,
         startRot: Vector3,
         endRot: Vector3,
-        animationClip: AnimationState
     ) {
         //init this
         super();
         engine.addEntity(this)
 
         //model and pos
-        this.addComponent(model)
+        this.addComponent(new GLTFShape(doorMeshes[Math.round( Scalar.RandomRange(1, doorMeshes.length - 1))]))
         this.addComponent(new Transform({
             position: pos,
             rotation: Quaternion.Euler(startRot.x, startRot.y, startRot.z)
@@ -36,7 +46,7 @@ export class Door extends Entity implements ISystem{
 
         //animation
         this.addComponent(new Animator())
-        this.getComponent(Animator).addClip(animationClip)
+        this.getComponent(Animator).addClip(new AnimationState("Obj_Door_Open", { looping: false}))
 
         //audio
         this.addComponent(new AudioSource(new AudioClip("Audio/Door_Open.mp3")))
@@ -45,8 +55,8 @@ export class Door extends Entity implements ISystem{
         this.addComponent(
             new OnPointerDown(
                 (e) => {
-                    this.getComponent(Animator).getClip(animationClip.clip).stop();  
-                    this.getComponent(Animator).getClip(animationClip.clip).play();  
+                    this.getComponent(Animator).getClip("Obj_Door_Open").stop();  
+                    this.getComponent(Animator).getClip("Obj_Door_Open").play();  
                     this.getComponent(SlerpData).fraction = 0
                     this.Open = true;
                     this.getComponent(AudioSource).playOnce()
