@@ -37,9 +37,16 @@ export class roomManager extends Entity implements ISystem
     }
 
     update() {
-        //if (room1.isInRoom == true) {
-        //    engine.removeEntity(room1);
-        //}
+        if (room1.isInRoom == true) {
+            room1.stillInRoom = true;
+        }
+        if (room1.stillInRoom == true) {
+            if (room1.isInRoom == false) {
+                room1.stillInRoom = false
+                engine.removeEntity(room1);
+                room1 = new CreateRoom(roomPositions[0]); //middle room
+            }
+        }
         //if (room2.isInRoom == true) {
         //    engine.removeEntity(room2);
         //}

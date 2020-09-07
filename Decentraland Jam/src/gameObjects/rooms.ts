@@ -5,6 +5,7 @@ export class CreateRoom extends Entity {
 
     public num: number
     public isInRoom: boolean = false;
+    public stillInRoom: boolean = false;
 
     //init
     constructor(
