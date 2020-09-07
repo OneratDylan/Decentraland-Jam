@@ -49,8 +49,6 @@ export class Door extends Entity implements ISystem{
         this.addComponent(new Animator())
         this.getComponent(Animator).addClip(new AnimationState("Obj_Door_Open", { looping: false}))
 
-        //audio
-        this.addComponent(new AudioSource(new AudioClip("Audio/Door_Open.mp3")))
 
         //on click
         if (!this.isLocked) {
@@ -62,9 +60,9 @@ export class Door extends Entity implements ISystem{
                         this.getComponent(Animator).getClip("Obj_Door_Open").play();
                         this.getComponent(SlerpData).fraction = 0
                         this.Open = true;
+
+                        this.addComponentOrReplace(new AudioSource(new AudioClip("Audio/Door_Open.mp3")))
                         this.getComponent(AudioSource).playOnce()
-
-
                     },
                     { hoverText: "Open Door" }
                 )
@@ -112,10 +110,13 @@ export class Door extends Entity implements ISystem{
                     slerp.fraction += dt / 2
                 }
             }
-            if (this.getComponent(SlerpData).fraction >= 1) {
+            if (this.getComponent(SlerpData).fraction >= .35) {
                 this.getComponent(SlerpData).fraction = 0;
                 this.IsClosing = false
-          }
+
+                this.addComponentOrReplace(new AudioSource(new AudioClip("Audio/Door_Close_Alt.mp3")))
+                this.getComponent(AudioSource).playOnce()
+            }
         }
 
     }
