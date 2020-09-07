@@ -1,7 +1,10 @@
+import utils from "node_modules/decentraland-ecs-utils/index"
+
 export class CreateRoom extends Entity {
     // public vars
 
     public num: number
+    public isInRoom: boolean = false;
 
     //init
     constructor(
@@ -31,5 +34,25 @@ export class CreateRoom extends Entity {
             this.addComponent(new GLTFShape("Models/Room_10x10_04.gltf"))
             this.addComponent(new Transform({ position: pos }))
         }
+
+
+            const trigger = new Entity()
+            engine.addEntity(trigger)
+            trigger.addComponent(new Transform({ position: pos }))
+
+            trigger.addComponent(new utils.TriggerComponent(
+                new utils.TriggerBoxShape(new Vector3(10,8,10), Vector3.Zero()), //shape
+                0, //layer
+                0, //triggeredByLayer
+                null, //onTriggerEnter
+                null, //onTriggerExit
+                (): void => {
+                    //onCameraEnter
+                    this.isInRoom = true;
+                    //engine.removeEntity(this)
+                },
+               null
+            ))
+        
     }
 }

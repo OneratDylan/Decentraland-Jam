@@ -1,5 +1,6 @@
 import { Door } from "./gameObjects/door";
 import { roomManager } from "./gameObjects/roomManager"
+import utils from "node_modules/decentraland-ecs-utils/index"
 
 /// --- Init Objs ---
 let x: number = 24;
@@ -61,3 +62,24 @@ function MovePlayer() {
 
     engine.addEntity(respawner)
 }
+
+//createTrigger(new Vector3(0,0,0), new Vector3(10,10, 10))
+//function createTrigger(pos: Vector3, size: Vector3) {
+//    const trigger = new Entity()
+//    engine.addEntity(trigger)
+//    trigger.addComponent(new Transform({ position: pos }))
+//
+//    trigger.addComponent(new utils.TriggerComponent(
+//        new utils.TriggerBoxShape(size, Vector3.Zero()), //shape
+//        0, //layer
+//        0, //triggeredByLayer
+//        null, //onTriggerEnter
+//        null, //onTriggerExit
+//        (): void => {
+//            //onCameraEnter
+//            const camera = Camera.instance
+//            movePlayerTo({ x: 24, y: camera.position.y - 1, z: 24 })
+//        },
+//        null
+//    ))
+//}

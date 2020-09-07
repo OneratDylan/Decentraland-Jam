@@ -1,12 +1,12 @@
 import { CreateRoom } from "./rooms"
+import { Trigger } from "./roomTrigger"
 
 let x: number = 24;
 let y: number = 24;
 let roomSize: number = 10;
-const input = Input.instance
 
-let room1: Entity, room2: Entity, room3: Entity, room4: Entity, room5: Entity,
-    room6: Entity, room7: Entity, room8: Entity, room9: Entity
+let room1: CreateRoom, room2: CreateRoom, room3: CreateRoom, room4: CreateRoom, room5: CreateRoom,
+    room6: CreateRoom, room7: CreateRoom, room8: CreateRoom, room9: CreateRoom
 
 let roomPositions: Array<Vector3> =
     [new Vector3(x, 0, y),
@@ -37,7 +37,44 @@ export class roomManager extends Entity implements ISystem
         room9 = new CreateRoom(roomPositions[8]); // top left
     }
 
-    update(dt: number) {
-
+    update() {
+        if (room1.isInRoom == true) {
+            engine.removeEntity(room1);
+        }
+        if (room2.isInRoom == true) {
+            engine.removeEntity(room2);
+        }
+        if (room3.isInRoom == true) {
+            engine.removeEntity(room3);
+        }
+        if (room4.isInRoom == true) {
+            engine.removeEntity(room4);
+        }
+        if (room5.isInRoom == true) {
+            engine.removeEntity(room5);
+        }
+        if (room6.isInRoom == true) {
+            engine.removeEntity(room6);
+        }
+        if (room7.isInRoom == true) {
+            engine.removeEntity(room7);
+        }
+        if (room8.isInRoom == true) {
+            engine.removeEntity(room8);
+        }
+        if (room9.isInRoom == true) {
+            engine.removeEntity(room9);
+        }
     }
+
+
 }
+
+// Instance the input object
+const input = Input.instance
+
+// button down event
+input.subscribe("BUTTON_DOWN", ActionButton.SECONDARY, false, (e) => {
+    engine.removeEntity(room1);
+
+})
