@@ -31,7 +31,7 @@ export class Door extends Entity implements ISystem{
         engine.addEntity(this)
 
         //model and pos
-        this.addComponent(new GLTFShape(doorMeshes[Math.round( Scalar.RandomRange(1, doorMeshes.length - 1))]))
+        this.addComponent(new GLTFShape(doorMeshes[Math.round( Scalar.RandomRange(0, doorMeshes.length - 1))]))
         this.addComponent(new Transform({
             position: pos,
             rotation: Quaternion.Euler(startRot.x, startRot.y, startRot.z)

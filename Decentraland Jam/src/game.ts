@@ -9,28 +9,76 @@ let roomSize: number = 10;
 
 engine.addSystem(new roomManager())
 
+//inner top start
 engine.addSystem(new Door(
     new Vector3(x - .79, 0, y + (roomSize / 2)),
     new Vector3(0, 0, 0),
     new Vector3(0, 90, 0)))
 
+engine.addSystem(new Door(
+    new Vector3(x - .79 + roomSize, 0, y + (roomSize / 2)),
+    new Vector3(0, 0, 0),
+    new Vector3(0, 90, 0)))
+
+engine.addSystem(new Door(
+    new Vector3(x - .79 - roomSize, 0, y + (roomSize / 2)),
+    new Vector3(0, 0, 0),
+    new Vector3(0, 90, 0)))
+//inner top end
+
+//inner bottom start
 //Door Two Init
 engine.addSystem(new Door(
     new Vector3(x - .79, 0, y - (roomSize / 2)),
     new Vector3(0, 0, 0),
     new Vector3(0, 90, 0)))
 
+engine.addSystem(new Door(
+    new Vector3(x - .79 + roomSize, 0, y - (roomSize / 2)),
+    new Vector3(0, 0, 0),
+    new Vector3(0, 90, 0)))
+
+engine.addSystem(new Door(
+    new Vector3(x - .79 - roomSize, 0, y - (roomSize / 2)),
+    new Vector3(0, 0, 0),
+    new Vector3(0, 90, 0)))
+//inner bottom end
+
+//inner left start
 //Door Three Init
 engine.addSystem(new Door(
     new Vector3(x - (roomSize / 2), 0, y + .79),
     new Vector3(0, 90, 0),
     new Vector3(0, 0, 0)))
 
+engine.addSystem(new Door(
+    new Vector3(x - (roomSize / 2), 0, y + .79 + roomSize),
+    new Vector3(0, 90, 0),
+    new Vector3(0, 0, 0)))
+
+engine.addSystem(new Door(
+    new Vector3(x - (roomSize / 2), 0, y + .79 - roomSize),
+    new Vector3(0, 90, 0),
+    new Vector3(0, 0, 0)))
+//inner left end
+
+//inner right start
 //Door Four Init
 engine.addSystem(new Door(
     new Vector3(x + (roomSize / 2), 0, y + .79),
     new Vector3(0, 90, 0),
     new Vector3(0, 0, 0)))
+
+engine.addSystem(new Door(
+    new Vector3(x + (roomSize / 2), 0, y + .79 - roomSize),
+    new Vector3(0, 90, 0),
+    new Vector3(0, 0, 0)))
+
+engine.addSystem(new Door(
+    new Vector3(x + (roomSize / 2), 0, y + .79 + roomSize),
+    new Vector3(0, 90, 0),
+    new Vector3(0, 0, 0)))
+//inner right end
 
 //out right start
 //Door Four Init
