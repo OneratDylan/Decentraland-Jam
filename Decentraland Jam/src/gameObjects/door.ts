@@ -10,6 +10,14 @@ let doorMeshes: Array<string> =
         "Models/Obj_Door_005.gltf",
     ];
 
+let doorOpenSounds: Array<string> =
+    [
+        "Audio/Door_Open.mp3",
+        "Audio/Door_Open_02.mp3",
+        "Audio/Door_Open_03.mp3",
+        "Audio/Door_Open_04.mp3"
+    ];
+
 export class Door extends Entity implements ISystem{
 
     // public vars
@@ -61,7 +69,7 @@ export class Door extends Entity implements ISystem{
                         this.getComponent(SlerpData).fraction = 0
                         this.Open = true;
 
-                        this.addComponentOrReplace(new AudioSource(new AudioClip("Audio/Door_Open.mp3")))
+                        this.addComponentOrReplace(new AudioSource(new AudioClip(doorOpenSounds[Math.round(Scalar.RandomRange(0, doorOpenSounds.length - 1))])))
                         this.getComponent(AudioSource).playOnce()
                     },
                     {
