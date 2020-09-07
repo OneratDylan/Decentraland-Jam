@@ -49,9 +49,11 @@ export class CreateRoom extends Entity {
                 (): void => {
                     //onCameraEnter
                     this.isInRoom = true;
-                    //engine.removeEntity(this)
                 },
-               null
+                (): void => {
+                    //onCameraEnter
+                    this.isInRoom = false;
+                }
             ))
         
     }

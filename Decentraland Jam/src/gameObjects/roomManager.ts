@@ -1,5 +1,4 @@
 import { CreateRoom } from "./rooms"
-import { Trigger } from "./roomTrigger"
 
 let x: number = 24;
 let y: number = 24;

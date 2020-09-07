@@ -32,13 +32,111 @@ engine.addSystem(new Door(
     new Vector3(0, 0, 0),
     new AnimationState("Obj_Door_Open", { looping: false })))
 
-//Door Three Init
+//Door Four Init
 engine.addSystem(new Door(
     new GLTFShape("Models/Obj_Door_004.gltf"),
     new Vector3(x + (roomSize / 2), 0, y + .79),
     new Vector3(0, 90, 0),
     new Vector3(0, 0, 0),
     new AnimationState("Obj_Door_Open", { looping: false })))
+
+//out right start
+//Door Four Init
+engine.addSystem(new Door(
+    new GLTFShape("Models/Obj_Door_004.gltf"),
+    new Vector3(x + (roomSize / 2) * 3, 0, y + .79),
+    new Vector3(0, 90, 0),
+    new Vector3(0, 0, 0),
+    new AnimationState("Obj_Door_Open", { looping: false })))
+
+engine.addSystem(new Door(
+    new GLTFShape("Models/Obj_Door_004.gltf"),
+    new Vector3(x + (roomSize / 2) * 3, 0, y + .79 + roomSize),
+    new Vector3(0, 90, 0),
+    new Vector3(0, 0, 0),
+    new AnimationState("Obj_Door_Open", { looping: false })))
+
+engine.addSystem(new Door(
+    new GLTFShape("Models/Obj_Door_004.gltf"),
+    new Vector3(x + (roomSize / 2) * 3, 0, y + .79 - roomSize),
+    new Vector3(0, 90, 0),
+    new Vector3(0, 0, 0),
+    new AnimationState("Obj_Door_Open", { looping: false })))
+//out right end 
+
+//out left start
+//Door five Init
+engine.addSystem(new Door(
+    new GLTFShape("Models/Obj_Door_003.gltf"),
+    new Vector3(x - (roomSize / 2) *3, 0, y + .79),
+    new Vector3(0, 90, 0),
+    new Vector3(0, 0, 0),
+    new AnimationState("Obj_Door_Open", { looping: false })))
+
+engine.addSystem(new Door(
+    new GLTFShape("Models/Obj_Door_003.gltf"),
+    new Vector3(x - (roomSize / 2) * 3, 0, y + .79 + roomSize),
+    new Vector3(0, 90, 0),
+    new Vector3(0, 0, 0),
+    new AnimationState("Obj_Door_Open", { looping: false })))
+
+engine.addSystem(new Door(
+    new GLTFShape("Models/Obj_Door_003.gltf"),
+    new Vector3(x - (roomSize / 2) * 3, 0, y + .79 - roomSize),
+    new Vector3(0, 90, 0),
+    new Vector3(0, 0, 0),
+    new AnimationState("Obj_Door_Open", { looping: false })))
+//out left end
+
+//out top start
+//Door six init
+engine.addSystem(new Door(
+    new GLTFShape("Models/Obj_Door_001.gltf"),
+    new Vector3(x - .79, 0, y + (roomSize / 2) * 3),
+    new Vector3(0, 0, 0),
+    new Vector3(0, 90, 0),
+    new AnimationState("Obj_Door_Open", { looping: false })))
+
+engine.addSystem(new Door(
+    new GLTFShape("Models/Obj_Door_001.gltf"),
+    new Vector3(x - .79 - roomSize, 0, y + (roomSize / 2) * 3),
+    new Vector3(0, 0, 0),
+    new Vector3(0, 90, 0),
+    new AnimationState("Obj_Door_Open", { looping: false })))
+
+engine.addSystem(new Door(
+    new GLTFShape("Models/Obj_Door_001.gltf"),
+    new Vector3(x - .79 + roomSize, 0, y + (roomSize / 2) * 3),
+    new Vector3(0, 0, 0),
+    new Vector3(0, 90, 0),
+    new AnimationState("Obj_Door_Open", { looping: false })))
+//out top end
+
+//out bottom start 
+//Door seven Init
+engine.addSystem(new Door(
+    new GLTFShape("Models/Obj_Door_002.gltf"),
+    new Vector3(x - .79, 0, y - (roomSize / 2) * 3),
+    new Vector3(0, 0, 0),
+    new Vector3(0, 90, 0),
+    new AnimationState("Obj_Door_Open", { looping: false })))
+
+//Door eight Init
+engine.addSystem(new Door(
+    new GLTFShape("Models/Obj_Door_002.gltf"),
+    new Vector3(x - .79 - (roomSize), 0, y - (roomSize / 2) * 3),
+    new Vector3(0, 0, 0),
+    new Vector3(0, 90, 0),
+    new AnimationState("Obj_Door_Open", { looping: false })))
+
+//Door nine Init
+engine.addSystem(new Door(
+    new GLTFShape("Models/Obj_Door_002.gltf"),
+    new Vector3(x - .79 + (roomSize), 0, y - (roomSize / 2) * 3),
+    new Vector3(0, 0, 0),
+    new Vector3(0, 90, 0),
+    new AnimationState("Obj_Door_Open", { looping: false })))
+//out bottom end 
 
 MovePlayer()
 
@@ -62,24 +160,3 @@ function MovePlayer() {
 
     engine.addEntity(respawner)
 }
-
-//createTrigger(new Vector3(0,0,0), new Vector3(10,10, 10))
-//function createTrigger(pos: Vector3, size: Vector3) {
-//    const trigger = new Entity()
-//    engine.addEntity(trigger)
-//    trigger.addComponent(new Transform({ position: pos }))
-//
-//    trigger.addComponent(new utils.TriggerComponent(
-//        new utils.TriggerBoxShape(size, Vector3.Zero()), //shape
-//        0, //layer
-//        0, //triggeredByLayer
-//        null, //onTriggerEnter
-//        null, //onTriggerExit
-//        (): void => {
-//            //onCameraEnter
-//            const camera = Camera.instance
-//            movePlayerTo({ x: 24, y: camera.position.y - 1, z: 24 })
-//        },
-//        null
-//    ))
-//}
