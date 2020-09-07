@@ -64,7 +64,10 @@ export class Door extends Entity implements ISystem{
                         this.addComponentOrReplace(new AudioSource(new AudioClip("Audio/Door_Open.mp3")))
                         this.getComponent(AudioSource).playOnce()
                     },
-                    { hoverText: "Open Door" }
+                    {
+                        hoverText: "Open Door",
+                        distance: 4
+                    }
                 )
             )
         }
