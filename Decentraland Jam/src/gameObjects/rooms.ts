@@ -1,4 +1,5 @@
 import utils from "node_modules/decentraland-ecs-utils/index"
+import { Door } from "./door";
 
 export class CreateRoom extends Entity {
     // public vars
@@ -7,6 +8,7 @@ export class CreateRoom extends Entity {
 
     public isInRoom: boolean = false;
     public stillInRoom: boolean = false;
+    public lastDoor: Door;
 
     //init
     constructor(

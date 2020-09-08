@@ -2,6 +2,7 @@ import { SlerpData } from "customcomponents";
 import { distance } from "customcomponents";
 import utils from "node_modules/decentraland-ecs-utils/index"
 import { getUserPublicKey } from "@decentraland/Identity";
+import { CreateRoom } from "./rooms";
 
 let doorMeshes: Array<string> =
     [

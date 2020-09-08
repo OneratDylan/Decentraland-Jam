@@ -1,5 +1,6 @@
 import { Door } from "./gameObjects/door";
 import { roomManager } from "./gameObjects/roomManager"
+import { HouseBoarder } from "./gameObjects/houseBoarder"
 import utils from "node_modules/decentraland-ecs-utils/index"
 
 /// --- Init Objs ---
@@ -8,6 +9,8 @@ let y: number = 24;
 let roomSize: number = 10;
 
 engine.addSystem(new roomManager())
+
+new HouseBoarder()
 
 //inner top start
 engine.addSystem(new Door(
