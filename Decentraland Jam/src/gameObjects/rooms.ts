@@ -271,8 +271,6 @@ export class CreateRoom extends Entity {
                 couchTwo.addComponent(new GLTFShape("Models/Obj_Couch_Long.gltf"))
                 couchTwo.setParent(this)
             }
-
-
         }
 
         //Room Four grass
