@@ -17,13 +17,19 @@ export class CreateRoom extends Entity {
         super();
         engine.addEntity(this)
 
+        let roomSounds: Array<string> =
+            [
+                "Audio/Ambience_Horror.mp3",
+                "Audio/Ambience_Voices.mp3"
+            ];
+
         let objNum: number
 
         this.num = Scalar.RandomRange(1, 4)
         this.num = Math.round(this.num)
 
         //Audio
-        const clip = new AudioClip("Audio/Ambience_Horror.mp3")
+        const clip = new AudioClip(roomSounds[Math.round(Scalar.RandomRange(0, roomSounds.length))])
         const source = new AudioSource(clip)
         this.addComponent(source)
         source.playing = true
