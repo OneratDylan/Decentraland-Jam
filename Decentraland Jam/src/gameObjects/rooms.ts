@@ -122,6 +122,15 @@ export class CreateRoom extends Entity {
                 engine.addEntity(tv)
                 tv.addComponent(new GLTFShape("Models/Obj_TVStation.gltf"))
                 tv.setParent(this)
+
+                //audio 
+                const clip = new AudioClip("Audio/static.mp3")
+                const source = new AudioSource(clip)
+                tv.addComponent(source)
+                source.playing = true
+                source.loop = true
+                source.volume = .5
+
             }
 
             //Couch
@@ -173,6 +182,14 @@ export class CreateRoom extends Entity {
                 engine.addEntity(tv)
                 tv.addComponent(new GLTFShape("Models/Obj_TVStation.gltf"))
                 tv.setParent(this)
+
+                //audio 
+                const clip = new AudioClip("Audio/static.mp3")
+                const source = new AudioSource(clip)
+                tv.addComponent(source)
+                source.playing = true
+                source.loop = true
+                source.volume = .5
             }
 
             //Coffee Table
@@ -191,6 +208,15 @@ export class CreateRoom extends Entity {
                 engine.addEntity(bush)
                 bush.addComponent(new GLTFShape("Models/Obj_Bush.gltf"))
                 bush.setParent(this)
+            }
+
+            //Top Shelf
+            objNum = Scalar.RandomRange(1, 4)
+            if (objNum < 2) {
+                const topShelf = new Entity()
+                engine.addEntity(topShelf)
+                topShelf.addComponent(new GLTFShape("Models/Obj_TopShelf.gltf"))
+                topShelf.setParent(this)
             }
         }
 
