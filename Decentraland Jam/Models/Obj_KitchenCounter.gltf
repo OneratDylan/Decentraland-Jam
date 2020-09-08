@@ -27,7 +27,7 @@
                     "disk_animation_folder_path" : "C:/",
                     "disk_mesh_folder_path" : "C:/",
                     "do_not_show_again" : 0,
-                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x0000027962B2F928>>",
+                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x00000278A8A7E8D8>>",
                     "error_message" : "",
                     "export_all_actions" : 1,
                     "global_scale" : 1,
@@ -102,7 +102,7 @@
             },
             "name" : "Scene_Room01",
             "nodes" : [
-                0
+                1
             ]
         },
         {
@@ -277,7 +277,30 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "Obj.KitchenCounter"
+            "name" : "Obj.KitchenCounter_collider",
+            "translation" : [
+                0.20297718048095703,
+                1.2731448411941528,
+                0.17144060134887695
+            ]
+        },
+        {
+            "children" : [
+                0
+            ],
+            "mesh" : 1,
+            "name" : "Obj.KitchenCounter",
+            "rotation" : [
+                0,
+                0.7071067690849304,
+                0,
+                0.7071067690849304
+            ],
+            "translation" : [
+                3.4349796772003174,
+                0,
+                -3.1876327991485596
+            ]
         }
     ],
     "materials" : [
@@ -301,7 +324,7 @@
     ],
     "meshes" : [
         {
-            "name" : "Obj.Faucet.Kitchen.003",
+            "name" : "Cube.200",
             "primitives" : [
                 {
                     "attributes" : {
@@ -309,7 +332,20 @@
                         "NORMAL" : 1,
                         "TEXCOORD_0" : 2
                     },
-                    "indices" : 3,
+                    "indices" : 3
+                }
+            ]
+        },
+        {
+            "name" : "Obj.Faucet.Kitchen.003",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
                     "material" : 0
                 }
             ]
@@ -331,6 +367,40 @@
         {
             "bufferView" : 0,
             "componentType" : 5126,
+            "count" : 56,
+            "max" : [
+                1.5533338785171509,
+                1.2759294509887695,
+                1.404276967048645
+            ],
+            "min" : [
+                -2.439256191253662,
+                -1.2802698612213135,
+                -2.1173903942108154
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 56,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 56,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 84,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
             "count" : 3526,
             "max" : [
                 1.757752537727356,
@@ -345,19 +415,19 @@
             "type" : "VEC3"
         },
         {
-            "bufferView" : 1,
+            "bufferView" : 5,
             "componentType" : 5126,
             "count" : 3526,
             "type" : "VEC3"
         },
         {
-            "bufferView" : 2,
+            "bufferView" : 6,
             "componentType" : 5126,
             "count" : 3526,
             "type" : "VEC2"
         },
         {
-            "bufferView" : 3,
+            "bufferView" : 7,
             "componentType" : 5123,
             "count" : 7182,
             "type" : "SCALAR"
@@ -366,28 +436,48 @@
     "bufferViews" : [
         {
             "buffer" : 0,
-            "byteLength" : 42312,
+            "byteLength" : 672,
             "byteOffset" : 0
         },
         {
             "buffer" : 0,
+            "byteLength" : 672,
+            "byteOffset" : 672
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 448,
+            "byteOffset" : 1344
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 168,
+            "byteOffset" : 1792
+        },
+        {
+            "buffer" : 0,
             "byteLength" : 42312,
-            "byteOffset" : 42312
+            "byteOffset" : 1960
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 42312,
+            "byteOffset" : 44272
         },
         {
             "buffer" : 0,
             "byteLength" : 28208,
-            "byteOffset" : 84624
+            "byteOffset" : 86584
         },
         {
             "buffer" : 0,
             "byteLength" : 14364,
-            "byteOffset" : 112832
+            "byteOffset" : 114792
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 127196,
+            "byteLength" : 129156,
             "uri" : "Obj_KitchenCounter.bin"
         }
     ]

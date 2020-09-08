@@ -27,7 +27,7 @@
                     "disk_animation_folder_path" : "C:/",
                     "disk_mesh_folder_path" : "C:/",
                     "do_not_show_again" : 0,
-                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x000002D2044EADE8>>",
+                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x00000278A8A7E8D8>>",
                     "error_message" : "",
                     "export_all_actions" : 1,
                     "global_scale" : 1,
@@ -290,10 +290,16 @@
             ],
             "mesh" : 1,
             "name" : "Obj_TVStation",
+            "rotation" : [
+                0,
+                -0.7071067690849304,
+                0,
+                0.7071067690849304
+            ],
             "translation" : [
-                -3.6733975410461426,
+                4.292876720428467,
                 0.004726700484752655,
-                2.231203079223633
+                2.8498144149780273
             ]
         }
     ],
@@ -368,7 +374,7 @@
                 0.7546148896217346
             ],
             "min" : [
-                -2.757513999938965,
+                -2.550732135772705,
                 0.008148601278662682,
                 -0.6387308835983276
             ],

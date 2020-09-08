@@ -27,7 +27,7 @@
                     "disk_animation_folder_path" : "C:/",
                     "disk_mesh_folder_path" : "C:/",
                     "do_not_show_again" : 0,
-                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x000001D9BA48E0F8>>",
+                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x000001AD74A7EEB8>>",
                     "error_message" : "",
                     "export_all_actions" : 1,
                     "global_scale" : 1,
@@ -293,7 +293,7 @@
             "translation" : [
                 -1.4521334171295166,
                 0.021695099771022797,
-                7.415288925170898
+                1.2039709091186523
             ]
         }
     ],
@@ -305,10 +305,27 @@
                 0,
                 0
             ],
-            "name" : "Mat_Material",
+            "name" : "Texture_Paint",
             "pbrMetallicRoughness" : {
                 "baseColorTexture" : {
                     "index" : 0,
+                    "texCoord" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 1
+            }
+        },
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "Mat_Material",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1,
                     "texCoord" : 0
                 },
                 "metallicFactor" : 0,
@@ -341,11 +358,23 @@
                     },
                     "indices" : 7,
                     "material" : 0
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 8,
+                        "NORMAL" : 9,
+                        "TEXCOORD_0" : 10
+                    },
+                    "indices" : 11,
+                    "material" : 1
                 }
             ]
         }
     ],
     "textures" : [
+        {
+            "source" : 0
+        },
         {
             "source" : 0
         }
@@ -364,7 +393,7 @@
             "count" : 24,
             "max" : [
                 0.014612019062042236,
-                1.7169785499572754,
+                2.648153305053711,
                 0.20504455268383026
             ],
             "min" : [
@@ -425,6 +454,40 @@
             "componentType" : 5123,
             "count" : 708,
             "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 832,
+            "max" : [
+                0.249660462141037,
+                2.6784212589263916,
+                0.37786778807640076
+            ],
+            "min" : [
+                -0.4586331844329834,
+                1.525139570236206,
+                -0.2688681483268738
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5126,
+            "count" : 832,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 10,
+            "componentType" : 5126,
+            "count" : 832,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 11,
+            "componentType" : 5123,
+            "count" : 2436,
+            "type" : "SCALAR"
         }
     ],
     "bufferViews" : [
@@ -467,11 +530,31 @@
             "buffer" : 0,
             "byteLength" : 1416,
             "byteOffset" : 16200
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 9984,
+            "byteOffset" : 17616
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 9984,
+            "byteOffset" : 27600
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6656,
+            "byteOffset" : 37584
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4872,
+            "byteOffset" : 44240
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 17616,
+            "byteLength" : 49112,
             "uri" : "Obj_Shelf001.bin"
         }
     ]

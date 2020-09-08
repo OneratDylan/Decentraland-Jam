@@ -27,7 +27,7 @@
                     "disk_animation_folder_path" : "C:/",
                     "disk_mesh_folder_path" : "C:/",
                     "do_not_show_again" : 0,
-                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x0000027962B2F928>>",
+                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x00000278A8A7E8D8>>",
                     "error_message" : "",
                     "export_all_actions" : 1,
                     "global_scale" : 1,
@@ -277,9 +277,9 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "Obj_Couch_Long_collider",
+            "name" : "Obj_Couch_Long_collider.004",
             "translation" : [
-                1.9660072326660156,
+                1.9660067558288574,
                 0.02365521341562271,
                 0.8045716285705566
             ]
@@ -290,10 +290,16 @@
             ],
             "mesh" : 1,
             "name" : "Obj_Couch_Long",
+            "rotation" : [
+                0,
+                -0.7071067690849304,
+                0,
+                0.7071067690849304
+            ],
             "translation" : [
-                -3.912346839904785,
+                -3.904452085494995,
                 -0.011482194066047668,
-                6.7842278480529785
+                2.815155267715454
             ]
         }
     ],

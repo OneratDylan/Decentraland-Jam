@@ -27,7 +27,7 @@
                     "disk_animation_folder_path" : "C:/",
                     "disk_mesh_folder_path" : "C:/",
                     "do_not_show_again" : 0,
-                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x0000027962B2F928>>",
+                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x00000278A8A7E8D8>>",
                     "error_message" : "",
                     "export_all_actions" : 1,
                     "global_scale" : 1,
@@ -289,7 +289,12 @@
                 0
             ],
             "mesh" : 1,
-            "name" : "Obj_BookShelf"
+            "name" : "Obj_BookShelf",
+            "translation" : [
+                -2.0035715103149414,
+                0,
+                4.51257848739624
+            ]
         }
     ],
     "materials" : [

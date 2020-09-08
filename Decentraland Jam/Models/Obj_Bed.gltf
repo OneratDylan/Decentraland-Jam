@@ -27,7 +27,7 @@
                     "disk_animation_folder_path" : "C:/",
                     "disk_mesh_folder_path" : "C:/",
                     "do_not_show_again" : 0,
-                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x0000027962B2F928>>",
+                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x00000278A8A7E8D8>>",
                     "error_message" : "",
                     "export_all_actions" : 1,
                     "global_scale" : 1,
@@ -279,9 +279,9 @@
             "mesh" : 0,
             "name" : "Obj_Bed_collider",
             "translation" : [
-                -0.8284816741943359,
+                -0.828481912612915,
                 0.8284612894058228,
-                -0.06571221351623535
+                -0.06571245193481445
             ]
         },
         {
@@ -289,7 +289,18 @@
                 0
             ],
             "mesh" : 1,
-            "name" : "Obj_Bed"
+            "name" : "Obj_Bed",
+            "rotation" : [
+                0,
+                -0.7071067690849304,
+                0,
+                0.7071067690849304
+            ],
+            "translation" : [
+                -2.6395363807678223,
+                0,
+                -3.059438943862915
+            ]
         }
     ],
     "materials" : [

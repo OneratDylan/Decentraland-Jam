@@ -27,7 +27,7 @@
                     "disk_animation_folder_path" : "C:/",
                     "disk_mesh_folder_path" : "C:/",
                     "do_not_show_again" : 0,
-                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x000002D2044EADE8>>",
+                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x00000278A8A7E8D8>>",
                     "error_message" : "",
                     "export_all_actions" : 1,
                     "global_scale" : 1,
@@ -279,9 +279,9 @@
             "mesh" : 0,
             "name" : "Obj_PlantRoot_Pot_collider",
             "translation" : [
-                0.7586452960968018,
+                0.7586455345153809,
                 0.021831467747688293,
-                0.20247364044189453
+                0.20247375965118408
             ]
         },
         {
@@ -291,9 +291,9 @@
             "mesh" : 1,
             "name" : "Obj_PlantRoot_Pot",
             "translation" : [
-                2.073681592941284,
+                -4.335678577423096,
                 -0.01229795441031456,
-                7.321175575256348
+                1.4294041395187378
             ]
         }
     ],
