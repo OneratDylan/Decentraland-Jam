@@ -27,7 +27,7 @@
                     "disk_animation_folder_path" : "C:/",
                     "disk_mesh_folder_path" : "C:/",
                     "do_not_show_again" : 0,
-                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x0000027962B2F928>>",
+                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x000001AD74A7EEB8>>",
                     "error_message" : "",
                     "export_all_actions" : 1,
                     "global_scale" : 1,
@@ -289,7 +289,12 @@
                 0
             ],
             "mesh" : 1,
-            "name" : "Obj_TopShelf"
+            "name" : "Obj_TopShelf",
+            "translation" : [
+                2.603975534439087,
+                0,
+                4.921851634979248
+            ]
         }
     ],
     "materials" : [
@@ -390,7 +395,7 @@
         {
             "bufferView" : 4,
             "componentType" : 5126,
-            "count" : 2080,
+            "count" : 2078,
             "max" : [
                 0.9164428114891052,
                 3.5000627040863037,
@@ -406,13 +411,13 @@
         {
             "bufferView" : 5,
             "componentType" : 5126,
-            "count" : 2080,
+            "count" : 2078,
             "type" : "VEC3"
         },
         {
             "bufferView" : 6,
             "componentType" : 5126,
-            "count" : 2080,
+            "count" : 2078,
             "type" : "VEC2"
         },
         {
@@ -445,28 +450,28 @@
         },
         {
             "buffer" : 0,
-            "byteLength" : 24960,
+            "byteLength" : 24936,
             "byteOffset" : 840
         },
         {
             "buffer" : 0,
-            "byteLength" : 24960,
-            "byteOffset" : 25800
+            "byteLength" : 24936,
+            "byteOffset" : 25776
         },
         {
             "buffer" : 0,
-            "byteLength" : 16640,
-            "byteOffset" : 50760
+            "byteLength" : 16624,
+            "byteOffset" : 50712
         },
         {
             "buffer" : 0,
             "byteLength" : 8784,
-            "byteOffset" : 67400
+            "byteOffset" : 67336
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 76184,
+            "byteLength" : 76120,
             "uri" : "Obj_TopShelf.bin"
         }
     ]
