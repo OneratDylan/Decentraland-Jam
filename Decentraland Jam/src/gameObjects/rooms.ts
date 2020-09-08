@@ -148,6 +148,15 @@ export class CreateRoom extends Entity {
             this.addComponent(new GLTFShape("Models/Room_10x10_02.gltf"))
             this.addComponent(new Transform({ position: pos }))
 
+            //Plant
+            objNum = Scalar.RandomRange(1, 4)
+            if (objNum < 2) {
+                const root = new Entity()
+                engine.addEntity(root)
+                root.addComponent(new GLTFShape("Models/Obj_PlantRoot_Pot.gltf"))
+                root.setParent(this)
+            }
+
             //Couch Two
             objNum = Scalar.RandomRange(1, 4)
             if (objNum < 2) {
@@ -189,6 +198,15 @@ export class CreateRoom extends Entity {
         if (this.num == 3) {
             this.addComponent(new GLTFShape("Models/Room_10x10_03.gltf"))
             this.addComponent(new Transform({ position: pos }))
+
+            //Plant
+            objNum = Scalar.RandomRange(1, 4)
+            if (objNum < 2) {
+                const root = new Entity()
+                engine.addEntity(root)
+                root.addComponent(new GLTFShape("Models/Obj_PlantRoot_Pot.gltf"))
+                root.setParent(this)
+            }
 
             //Shelf
             objNum = Scalar.RandomRange(1, 4)
@@ -236,7 +254,7 @@ export class CreateRoom extends Entity {
             }
         }
 
-        //Room Four
+        //Room Four grass
         if (this.num == 4) {
             this.addComponent(new GLTFShape("Models/Room_10x10_04.gltf"))
             this.addComponent(new Transform({ position: pos }))
