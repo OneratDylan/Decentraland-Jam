@@ -65,6 +65,7 @@ export class CreateRoom extends Entity {
             statue.addComponent(new GLTFShape("Models/Obj_Statue.gltf"))
             statue.setParent(this)
 
+            //Coffee Table
             const coffeeTable = new Entity()
             engine.addEntity(coffeeTable)
             coffeeTable.addComponent(new GLTFShape("Models/Obj_Table_Coffee.gltf"))
@@ -75,21 +76,19 @@ export class CreateRoom extends Entity {
             topShelf.addComponent(new GLTFShape("Models/Obj_TopShelf.gltf"))
             topShelf.setParent(this)
 
-            const tree = new Entity()
-            engine.addEntity(tree)
-            tree.addComponent(new GLTFShape("Models/Obj_Tree.gltf"))
-            tree.setParent(this)
-
+            //TV
             const tv = new Entity()
             engine.addEntity(tv)
             tv.addComponent(new GLTFShape("Models/Obj_TVStation.gltf"))
             tv.setParent(this)
 
+            //Couch
             const couch = new Entity()
             engine.addEntity(couch)
             couch.addComponent(new GLTFShape("Models/Obj_Couch_Long_002.gltf"))
             couch.setParent(this)
 
+            //Couch Two
             const couchTwo = new Entity()
             engine.addEntity(couchTwo)
             couchTwo.addComponent(new GLTFShape("Models/Obj_Couch_Long.gltf"))
@@ -101,10 +100,23 @@ export class CreateRoom extends Entity {
             this.addComponent(new GLTFShape("Models/Room_10x10_02.gltf"))
             this.addComponent(new Transform({ position: pos }))
 
+            //Couch Two
             const couch = new Entity()
             engine.addEntity(couch)
-            couch.addComponent(new GLTFShape("Models/Obj_Couch_Long_002.gltf"))
+            couch.addComponent(new GLTFShape("Models/Obj_Couch_Long.gltf"))
             couch.setParent(this)
+
+            //TV
+            const tv = new Entity()
+            engine.addEntity(tv)
+            tv.addComponent(new GLTFShape("Models/Obj_TVStation.gltf"))
+            tv.setParent(this)
+
+            //Coffee Table
+            const coffeeTable = new Entity()
+            engine.addEntity(coffeeTable)
+            coffeeTable.addComponent(new GLTFShape("Models/Obj_Table_Coffee.gltf"))
+            coffeeTable.setParent(this)
         }
 
         //Room Three
@@ -116,6 +128,11 @@ export class CreateRoom extends Entity {
             engine.addEntity(desk)
             desk.addComponent(new GLTFShape("Models/Obj_DeskStudy.gltf"))
             desk.setParent(this)
+
+            const KCounter = new Entity()
+            engine.addEntity(KCounter)
+            KCounter.addComponent(new GLTFShape("Models/Obj_KitchenCounter.gltf"))
+            KCounter.setParent(this)
         }
 
         //Room Four
@@ -123,10 +140,11 @@ export class CreateRoom extends Entity {
             this.addComponent(new GLTFShape("Models/Room_10x10_04.gltf"))
             this.addComponent(new Transform({ position: pos }))
 
-            const KCounter = new Entity()
-            engine.addEntity(KCounter)
-            KCounter.addComponent(new GLTFShape("Models/Obj_KitchenCounter.gltf"))
-            KCounter.setParent(this)
+            //Tree
+            const tree = new Entity()
+            engine.addEntity(tree)
+            tree.addComponent(new GLTFShape("Models/Obj_Tree.gltf"))
+            tree.setParent(this)
         }
 
 
