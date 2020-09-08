@@ -133,14 +133,7 @@ export class CreateRoom extends Entity {
 
             }
 
-            //Couch
-            objNum = Scalar.RandomRange(1, 4)
-            if (objNum < 2) {
-                const couch = new Entity()
-                engine.addEntity(couch)
-                couch.addComponent(new GLTFShape("Models/Obj_Couch_Long_002.gltf"))
-                couch.setParent(this)
-            }
+
 
             //Desk
             objNum = Scalar.RandomRange(1, 4)
@@ -278,6 +271,8 @@ export class CreateRoom extends Entity {
                 couchTwo.addComponent(new GLTFShape("Models/Obj_Couch_Long.gltf"))
                 couchTwo.setParent(this)
             }
+
+
         }
 
         //Room Four grass
