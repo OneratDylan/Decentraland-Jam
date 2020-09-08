@@ -10,3 +10,22 @@ export function distance(pos1: Vector3, pos2: Vector3): number {
     const b = pos1.z - pos2.z
     return a * a + b * b
 }
+
+export function MovePlayer() {
+    const respawner = new Entity()
+    respawner.addComponent(new BoxShape())
+    respawner.addComponent(new Transform({ position: new Vector3(8, 0, 8) }))
+
+    let physicsCast = PhysicsCast.instance
+    let rayFromCamera = physicsCast.getRayFromCamera(1000)
+
+    respawner.addComponent(
+        new OnPointerDown(
+            (e) => {
+                const camera = Camera.instance
+                movePlayerTo({ x: 24, y: camera.position.y - 1, z: 24 })
+            },
+            { hoverText: "Move player" }
+        )
+    )
+}
