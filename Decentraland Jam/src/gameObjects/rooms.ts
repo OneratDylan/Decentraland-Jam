@@ -22,6 +22,13 @@ export class CreateRoom extends Entity {
         this.num = Scalar.RandomRange(1, 4)
         this.num = Math.round(this.num)
 
+        //Audio
+        const clip = new AudioClip("Audio/Ambience_Horror.mp3")
+        const source = new AudioSource(clip)
+        this.addComponent(source)
+        source.playing = true
+        source.loop = true
+
         //Room One
         if (this.num == 1) {
             this.addComponent(new GLTFShape("Models/Room_10x10_01.gltf"))
