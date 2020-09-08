@@ -135,13 +135,13 @@ export class CreateRoom extends Entity {
                 couch.setParent(this)
             }
 
-            //Couch Two
+            //Desk
             objNum = Scalar.RandomRange(1, 4)
             if (objNum < 2) {
-                const couchTwo = new Entity()
-                engine.addEntity(couchTwo)
-                couchTwo.addComponent(new GLTFShape("Models/Obj_Couch_Long.gltf"))
-                couchTwo.setParent(this)
+                const desk = new Entity()
+                engine.addEntity(desk)
+                desk.addComponent(new GLTFShape("Models/Obj_DeskStudy.gltf"))
+                desk.setParent(this)
             }
         }
 
@@ -183,15 +183,6 @@ export class CreateRoom extends Entity {
             this.addComponent(new GLTFShape("Models/Room_10x10_03.gltf"))
             this.addComponent(new Transform({ position: pos }))
 
-            //Desk
-            objNum = Scalar.RandomRange(1, 4)
-            if (objNum < 2) {
-                const desk = new Entity()
-                engine.addEntity(desk)
-                desk.addComponent(new GLTFShape("Models/Obj_DeskStudy.gltf"))
-                desk.setParent(this)
-            }
-
             //Shelf
             objNum = Scalar.RandomRange(1, 4)
             if (objNum < 2) {
@@ -226,6 +217,15 @@ export class CreateRoom extends Entity {
                 engine.addEntity(topShelf)
                 topShelf.addComponent(new GLTFShape("Models/Obj_TopShelf.gltf"))
                 topShelf.setParent(this)
+            }
+
+            //Couch Two
+            objNum = Scalar.RandomRange(1, 4)
+            if (objNum < 2) {
+                const couchTwo = new Entity()
+                engine.addEntity(couchTwo)
+                couchTwo.addComponent(new GLTFShape("Models/Obj_Couch_Long.gltf"))
+                couchTwo.setParent(this)
             }
         }
 
