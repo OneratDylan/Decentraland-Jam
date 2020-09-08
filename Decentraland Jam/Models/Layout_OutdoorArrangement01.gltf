@@ -1,0 +1,1092 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.2.75",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "extras" : {
+                "send2ue" : {
+                    "add_leaf_bones" : 0,
+                    "advanced_ui_import" : 0,
+                    "always_use_unreal_scene_scale" : 1,
+                    "apply_scale_options" : "FBX_SCALE_NONE",
+                    "apply_unit_scale" : 1,
+                    "armature_nodetype" : "NULL",
+                    "auto_stash_active_action" : 1,
+                    "auto_sync_control_nla_to_source" : 1,
+                    "axis_forward" : "-Y",
+                    "axis_up" : "Z",
+                    "bake_anim" : 1,
+                    "bake_anim_force_startend_keying" : 1,
+                    "bake_anim_simplify_factor" : 0,
+                    "bake_anim_step" : 1,
+                    "bake_anim_use_all_bones" : 1,
+                    "bake_space_transform" : 0,
+                    "disk_animation_folder_path" : "C:/",
+                    "disk_mesh_folder_path" : "C:/",
+                    "do_not_show_again" : 0,
+                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x000001F67786EA18>>",
+                    "error_message" : "",
+                    "export_all_actions" : 1,
+                    "global_scale" : 1,
+                    "import_animations" : 1,
+                    "import_lods" : 0,
+                    "import_materials" : 1,
+                    "import_textures" : 1,
+                    "incorrect_disk_animation_folder_path" : 0,
+                    "incorrect_disk_mesh_folder_path" : 0,
+                    "mesh_smooth_type" : "FACE",
+                    "options_type" : "paths",
+                    "path_mode" : "send_to_unreal",
+                    "primary_bone_axis" : "Y",
+                    "secondary_bone_axis" : "X",
+                    "show_fbx_settings" : 0,
+                    "unreal_animation_folder_path" : "/Game/untitled_category/untitled_asset/animations/",
+                    "unreal_mesh_folder_path" : "/Game/untitled_category/untitled_asset/",
+                    "unreal_skeleton_asset_path" : "",
+                    "use_armature_deform_only" : 0,
+                    "use_custom_props" : 0,
+                    "use_mesh_edges" : 0,
+                    "use_mesh_modifiers" : 1,
+                    "use_metadata" : 1,
+                    "use_object_origin" : 0,
+                    "use_subsurf" : 0,
+                    "use_tspace" : 0,
+                    "use_ue2rigify" : 0,
+                    "validate_materials" : 0,
+                    "validate_textures" : 0
+                },
+                "vr_landmarks" : [
+                    {
+                        "type" : 0
+                    }
+                ],
+                "glTF2ExportSettings" : {
+                    "export_all_influences" : 0,
+                    "export_animations" : 0,
+                    "export_apply" : 1,
+                    "export_cameras" : 0,
+                    "export_colors" : 1,
+                    "export_copyright" : "",
+                    "export_current_frame" : 0,
+                    "export_def_bones" : 0,
+                    "export_displacement" : 0,
+                    "export_draco_generic_quantization" : 12,
+                    "export_draco_mesh_compression_enable" : 0,
+                    "export_draco_mesh_compression_level" : 6,
+                    "export_draco_normal_quantization" : 10,
+                    "export_draco_position_quantization" : 14,
+                    "export_draco_texcoord_quantization" : 12,
+                    "export_extras" : 1,
+                    "export_force_sampling" : 1,
+                    "export_format" : "GLTF_SEPARATE",
+                    "export_frame_range" : 1,
+                    "export_frame_step" : 1,
+                    "export_image_format" : "AUTO",
+                    "export_lights" : 0,
+                    "export_materials" : 1,
+                    "export_morph" : 0,
+                    "export_morph_normal" : 1,
+                    "export_morph_tangent" : 0,
+                    "export_nla_strips" : 1,
+                    "export_normals" : 1,
+                    "export_selected" : 0,
+                    "export_skins" : 0,
+                    "export_tangents" : 0,
+                    "export_texcoords" : 1,
+                    "export_texture_dir" : "Textures",
+                    "export_yup" : 1
+                }
+            },
+            "name" : "Scene_Room01",
+            "nodes" : [
+                1,
+                3,
+                4,
+                6,
+                8,
+                10
+            ]
+        },
+        {
+            "extras" : {
+                "send2ue" : {
+                    "add_leaf_bones" : 0,
+                    "advanced_ui_import" : 0,
+                    "always_use_unreal_scene_scale" : 1,
+                    "apply_scale_options" : "FBX_SCALE_NONE",
+                    "apply_unit_scale" : 1,
+                    "armature_nodetype" : "NULL",
+                    "auto_stash_active_action" : 1,
+                    "auto_sync_control_nla_to_source" : 1,
+                    "axis_forward" : "-Y",
+                    "axis_up" : "Z",
+                    "bake_anim" : 1,
+                    "bake_anim_force_startend_keying" : 1,
+                    "bake_anim_simplify_factor" : 0,
+                    "bake_anim_step" : 1,
+                    "bake_anim_use_all_bones" : 1,
+                    "bake_space_transform" : 0,
+                    "disk_animation_folder_path" : "C:/",
+                    "disk_mesh_folder_path" : "C:/",
+                    "do_not_show_again" : 0,
+                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x0000014FD0459C38>>",
+                    "error_message" : "",
+                    "export_all_actions" : 1,
+                    "global_scale" : 1,
+                    "import_animations" : 1,
+                    "import_lods" : 0,
+                    "import_materials" : 1,
+                    "import_textures" : 1,
+                    "incorrect_disk_animation_folder_path" : 0,
+                    "incorrect_disk_mesh_folder_path" : 0,
+                    "mesh_smooth_type" : "FACE",
+                    "options_type" : "paths",
+                    "path_mode" : "send_to_unreal",
+                    "primary_bone_axis" : "Y",
+                    "secondary_bone_axis" : "X",
+                    "show_fbx_settings" : 0,
+                    "unreal_animation_folder_path" : "/Game/untitled_category/untitled_asset/animations/",
+                    "unreal_mesh_folder_path" : "/Game/untitled_category/untitled_asset/",
+                    "unreal_skeleton_asset_path" : "",
+                    "use_armature_deform_only" : 0,
+                    "use_custom_props" : 0,
+                    "use_mesh_edges" : 0,
+                    "use_mesh_modifiers" : 1,
+                    "use_metadata" : 1,
+                    "use_object_origin" : 0,
+                    "use_subsurf" : 0,
+                    "use_tspace" : 0,
+                    "use_ue2rigify" : 0,
+                    "validate_materials" : 0,
+                    "validate_textures" : 0
+                }
+            },
+            "name" : "Scene_Room02"
+        },
+        {
+            "extras" : {
+                "send2ue" : {
+                    "add_leaf_bones" : 0,
+                    "advanced_ui_import" : 0,
+                    "always_use_unreal_scene_scale" : 1,
+                    "apply_scale_options" : "FBX_SCALE_NONE",
+                    "apply_unit_scale" : 1,
+                    "armature_nodetype" : "NULL",
+                    "auto_stash_active_action" : 1,
+                    "auto_sync_control_nla_to_source" : 1,
+                    "axis_forward" : "-Y",
+                    "axis_up" : "Z",
+                    "bake_anim" : 1,
+                    "bake_anim_force_startend_keying" : 1,
+                    "bake_anim_simplify_factor" : 0,
+                    "bake_anim_step" : 1,
+                    "bake_anim_use_all_bones" : 1,
+                    "bake_space_transform" : 0,
+                    "disk_animation_folder_path" : "C:/",
+                    "disk_mesh_folder_path" : "C:/",
+                    "do_not_show_again" : 0,
+                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x000001D52AFEA9B8>>",
+                    "error_message" : "",
+                    "export_all_actions" : 1,
+                    "global_scale" : 1,
+                    "import_animations" : 1,
+                    "import_lods" : 0,
+                    "import_materials" : 1,
+                    "import_textures" : 1,
+                    "incorrect_disk_animation_folder_path" : 0,
+                    "incorrect_disk_mesh_folder_path" : 0,
+                    "mesh_smooth_type" : "FACE",
+                    "options_type" : "paths",
+                    "path_mode" : "send_to_unreal",
+                    "primary_bone_axis" : "Y",
+                    "secondary_bone_axis" : "X",
+                    "show_fbx_settings" : 0,
+                    "unreal_animation_folder_path" : "/Game/untitled_category/untitled_asset/animations/",
+                    "unreal_mesh_folder_path" : "/Game/untitled_category/untitled_asset/",
+                    "unreal_skeleton_asset_path" : "",
+                    "use_armature_deform_only" : 0,
+                    "use_custom_props" : 0,
+                    "use_mesh_edges" : 0,
+                    "use_mesh_modifiers" : 1,
+                    "use_metadata" : 1,
+                    "use_object_origin" : 0,
+                    "use_subsurf" : 0,
+                    "use_tspace" : 0,
+                    "use_ue2rigify" : 0,
+                    "validate_materials" : 0,
+                    "validate_textures" : 0
+                }
+            },
+            "name" : "Scene_Room03"
+        },
+        {
+            "extras" : {
+                "send2ue" : {
+                    "add_leaf_bones" : 0,
+                    "advanced_ui_import" : 0,
+                    "always_use_unreal_scene_scale" : 1,
+                    "apply_scale_options" : "FBX_SCALE_NONE",
+                    "apply_unit_scale" : 1,
+                    "armature_nodetype" : "NULL",
+                    "auto_stash_active_action" : 1,
+                    "auto_sync_control_nla_to_source" : 1,
+                    "axis_forward" : "-Y",
+                    "axis_up" : "Z",
+                    "bake_anim" : 1,
+                    "bake_anim_force_startend_keying" : 1,
+                    "bake_anim_simplify_factor" : 0,
+                    "bake_anim_step" : 1,
+                    "bake_anim_use_all_bones" : 1,
+                    "bake_space_transform" : 0,
+                    "disk_animation_folder_path" : "C:/",
+                    "disk_mesh_folder_path" : "C:/",
+                    "do_not_show_again" : 0,
+                    "draw" : "<bound method SendToUnrealPreferences.draw of <bpy_struct, SendToUnrealPreferences at 0x000001FC1C65A6E8>>",
+                    "error_message" : "",
+                    "export_all_actions" : 1,
+                    "global_scale" : 1,
+                    "import_animations" : 1,
+                    "import_lods" : 0,
+                    "import_materials" : 1,
+                    "import_textures" : 1,
+                    "incorrect_disk_animation_folder_path" : 0,
+                    "incorrect_disk_mesh_folder_path" : 0,
+                    "mesh_smooth_type" : "FACE",
+                    "options_type" : "paths",
+                    "path_mode" : "send_to_unreal",
+                    "primary_bone_axis" : "Y",
+                    "secondary_bone_axis" : "X",
+                    "show_fbx_settings" : 0,
+                    "unreal_animation_folder_path" : "/Game/untitled_category/untitled_asset/animations/",
+                    "unreal_mesh_folder_path" : "/Game/untitled_category/untitled_asset/",
+                    "unreal_skeleton_asset_path" : "",
+                    "use_armature_deform_only" : 0,
+                    "use_custom_props" : 0,
+                    "use_mesh_edges" : 0,
+                    "use_mesh_modifiers" : 1,
+                    "use_metadata" : 1,
+                    "use_object_origin" : 0,
+                    "use_subsurf" : 0,
+                    "use_tspace" : 0,
+                    "use_ue2rigify" : 0,
+                    "validate_materials" : 0,
+                    "validate_textures" : 0
+                }
+            },
+            "name" : "Scene_Room04"
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Obj_Tree_collider",
+            "translation" : [
+                -0.004005034454166889,
+                2.1689395904541016,
+                0.08511708676815033
+            ]
+        },
+        {
+            "children" : [
+                0
+            ],
+            "mesh" : 1,
+            "name" : "Obj_Tree",
+            "rotation" : [
+                0,
+                -0.3675055503845215,
+                0,
+                0.930021345615387
+            ],
+            "scale" : [
+                1.2370545864105225,
+                1.2246840000152588,
+                1.2370545864105225
+            ],
+            "translation" : [
+                -5.575605392456055,
+                0,
+                -5.952812194824219
+            ]
+        },
+        {
+            "mesh" : 2,
+            "name" : "Obj_Tree_collider.001",
+            "translation" : [
+                -0.004005034454166889,
+                2.1689395904541016,
+                0.08511708676815033
+            ]
+        },
+        {
+            "children" : [
+                2
+            ],
+            "mesh" : 3,
+            "name" : "Obj_Tree.001",
+            "scale" : [
+                1.4000492095947266,
+                1.3860485553741455,
+                1.4000492095947266
+            ],
+            "translation" : [
+                0.1960916519165039,
+                0,
+                0
+            ]
+        },
+        {
+            "name" : "Point",
+            "translation" : [
+                1.0520068407058716,
+                7.513160228729248,
+                1.7228609323501587
+            ]
+        },
+        {
+            "mesh" : 4,
+            "name" : "Obj_Bush_collider",
+            "translation" : [
+                0.031307220458984375,
+                0.7331854701042175,
+                0.01984316110610962
+            ]
+        },
+        {
+            "children" : [
+                5
+            ],
+            "mesh" : 5,
+            "name" : "Obj_Bush",
+            "scale" : [
+                1.1771949529647827,
+                1.1771949529647827,
+                1.1771949529647827
+            ],
+            "translation" : [
+                -5.234341621398926,
+                0,
+                3.3284752368927
+            ]
+        },
+        {
+            "mesh" : 6,
+            "name" : "Obj_Bush_collider.001",
+            "translation" : [
+                0.031307220458984375,
+                0.7331854701042175,
+                0.01984316110610962
+            ]
+        },
+        {
+            "children" : [
+                7
+            ],
+            "mesh" : 7,
+            "name" : "Obj_Bush.001",
+            "rotation" : [
+                0,
+                -0.27296727895736694,
+                0,
+                0.9620233178138733
+            ],
+            "scale" : [
+                1.3102548122406006,
+                1.3102548122406006,
+                1.3102548122406006
+            ],
+            "translation" : [
+                6.056738376617432,
+                0,
+                0
+            ]
+        },
+        {
+            "mesh" : 8,
+            "name" : "Obj_Bush_collider.002",
+            "translation" : [
+                0.031307220458984375,
+                0.7331854701042175,
+                0.01984316110610962
+            ]
+        },
+        {
+            "children" : [
+                9
+            ],
+            "mesh" : 9,
+            "name" : "Obj_Bush.002",
+            "rotation" : [
+                0,
+                -0.4898254871368408,
+                0,
+                0.8718205094337463
+            ],
+            "scale" : [
+                1.1771949529647827,
+                1.1771949529647827,
+                1.1771949529647827
+            ],
+            "translation" : [
+                0.22783462703227997,
+                0,
+                6.029378890991211
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "Texture_Paint",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0,
+                    "texCoord" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 1
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube.111",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3
+                }
+            ]
+        },
+        {
+            "name" : "Tree.009",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Cube.176",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 8,
+                        "NORMAL" : 9,
+                        "TEXCOORD_0" : 10
+                    },
+                    "indices" : 3
+                }
+            ]
+        },
+        {
+            "name" : "Tree.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 11,
+                        "NORMAL" : 12,
+                        "TEXCOORD_0" : 13
+                    },
+                    "indices" : 7,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Cube.112",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 14,
+                        "NORMAL" : 15,
+                        "TEXCOORD_0" : 16
+                    },
+                    "indices" : 17
+                }
+            ]
+        },
+        {
+            "name" : "Sphere.024",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 18,
+                        "NORMAL" : 19,
+                        "TEXCOORD_0" : 20
+                    },
+                    "indices" : 21,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Cube.203",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 22,
+                        "NORMAL" : 23,
+                        "TEXCOORD_0" : 24
+                    },
+                    "indices" : 17
+                }
+            ]
+        },
+        {
+            "name" : "Sphere.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 25,
+                        "NORMAL" : 26,
+                        "TEXCOORD_0" : 27
+                    },
+                    "indices" : 21,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Cube.205",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 28,
+                        "NORMAL" : 29,
+                        "TEXCOORD_0" : 30
+                    },
+                    "indices" : 17
+                }
+            ]
+        },
+        {
+            "name" : "Sphere.003",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 31,
+                        "NORMAL" : 32,
+                        "TEXCOORD_0" : 33
+                    },
+                    "indices" : 21,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "Textures-Painted",
+            "uri" : "Textures/Textures-Painted.jpg"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 24,
+            "max" : [
+                0.5534808039665222,
+                2.1585066318511963,
+                0.4281248152256012
+            ],
+            "min" : [
+                -0.5534952878952026,
+                -2.1585066318511963,
+                -0.4281248152256012
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 24,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 24,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 36,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 1354,
+            "max" : [
+                1.7568044662475586,
+                4.990851402282715,
+                1.3220629692077637
+            ],
+            "min" : [
+                -1.8289282321929932,
+                -0.0025314241647720337,
+                -1.6389873027801514
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 1354,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 1354,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 4272,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 24,
+            "max" : [
+                0.5534808039665222,
+                2.1585066318511963,
+                0.4281248152256012
+            ],
+            "min" : [
+                -0.5534952878952026,
+                -2.1585066318511963,
+                -0.4281248152256012
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5126,
+            "count" : 24,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 10,
+            "componentType" : 5126,
+            "count" : 24,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 11,
+            "componentType" : 5126,
+            "count" : 1354,
+            "max" : [
+                1.7568044662475586,
+                4.990851402282715,
+                1.3220629692077637
+            ],
+            "min" : [
+                -1.8289282321929932,
+                -0.0025314241647720337,
+                -1.6389873027801514
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 12,
+            "componentType" : 5126,
+            "count" : 1354,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 13,
+            "componentType" : 5126,
+            "count" : 1354,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 14,
+            "componentType" : 5126,
+            "count" : 24,
+            "max" : [
+                1.0207228660583496,
+                0.7253659963607788,
+                0.9962947368621826
+            ],
+            "min" : [
+                -1.0207334756851196,
+                -0.7253659963607788,
+                -0.9962947964668274
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 15,
+            "componentType" : 5126,
+            "count" : 24,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 16,
+            "componentType" : 5126,
+            "count" : 24,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 17,
+            "componentType" : 5123,
+            "count" : 36,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 18,
+            "componentType" : 5126,
+            "count" : 481,
+            "max" : [
+                0.9348702430725098,
+                1.30304753780365,
+                0.9264575242996216
+            ],
+            "min" : [
+                -0.9414522647857666,
+                -0.005889116786420345,
+                -0.9609394073486328
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 19,
+            "componentType" : 5126,
+            "count" : 481,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 20,
+            "componentType" : 5126,
+            "count" : 481,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 21,
+            "componentType" : 5123,
+            "count" : 1197,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 22,
+            "componentType" : 5126,
+            "count" : 24,
+            "max" : [
+                1.0207228660583496,
+                0.7253659963607788,
+                0.9962947368621826
+            ],
+            "min" : [
+                -1.0207334756851196,
+                -0.7253659963607788,
+                -0.9962947964668274
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 23,
+            "componentType" : 5126,
+            "count" : 24,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 24,
+            "componentType" : 5126,
+            "count" : 24,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 25,
+            "componentType" : 5126,
+            "count" : 481,
+            "max" : [
+                0.9348702430725098,
+                1.30304753780365,
+                0.9264575242996216
+            ],
+            "min" : [
+                -0.9414522647857666,
+                -0.005889116786420345,
+                -0.9609394073486328
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 26,
+            "componentType" : 5126,
+            "count" : 481,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 27,
+            "componentType" : 5126,
+            "count" : 481,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 28,
+            "componentType" : 5126,
+            "count" : 24,
+            "max" : [
+                1.0207228660583496,
+                0.7253659963607788,
+                0.9962947368621826
+            ],
+            "min" : [
+                -1.0207334756851196,
+                -0.7253659963607788,
+                -0.9962947964668274
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 29,
+            "componentType" : 5126,
+            "count" : 24,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 30,
+            "componentType" : 5126,
+            "count" : 24,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 31,
+            "componentType" : 5126,
+            "count" : 481,
+            "max" : [
+                0.9348702430725098,
+                1.30304753780365,
+                0.9264575242996216
+            ],
+            "min" : [
+                -0.9414522647857666,
+                -0.005889116786420345,
+                -0.9609394073486328
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 32,
+            "componentType" : 5126,
+            "count" : 481,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 33,
+            "componentType" : 5126,
+            "count" : 481,
+            "type" : "VEC2"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 288
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 192,
+            "byteOffset" : 576
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 72,
+            "byteOffset" : 768
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 16248,
+            "byteOffset" : 840
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 16248,
+            "byteOffset" : 17088
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 10832,
+            "byteOffset" : 33336
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 8544,
+            "byteOffset" : 44168
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 52712
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 53000
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 192,
+            "byteOffset" : 53288
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 16248,
+            "byteOffset" : 53480
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 16248,
+            "byteOffset" : 69728
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 10832,
+            "byteOffset" : 85976
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 96808
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 97096
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 192,
+            "byteOffset" : 97384
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 72,
+            "byteOffset" : 97576
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5772,
+            "byteOffset" : 97648
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5772,
+            "byteOffset" : 103420
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3848,
+            "byteOffset" : 109192
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2394,
+            "byteOffset" : 113040
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 115436
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 115724
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 192,
+            "byteOffset" : 116012
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5772,
+            "byteOffset" : 116204
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5772,
+            "byteOffset" : 121976
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3848,
+            "byteOffset" : 127748
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 131596
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 131884
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 192,
+            "byteOffset" : 132172
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5772,
+            "byteOffset" : 132364
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5772,
+            "byteOffset" : 138136
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3848,
+            "byteOffset" : 143908
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 147756,
+            "uri" : "Layout_OutdoorArrangement01.bin"
+        }
+    ]
+}
