@@ -1,5 +1,6 @@
 import { SlerpData } from "customcomponents";
 import { distance } from "customcomponents";
+import utils from "node_modules/decentraland-ecs-utils/index"
 
 let doorMeshes: Array<string> =
     [
@@ -79,6 +80,28 @@ export class Door extends Entity implements ISystem{
                 )
             )
         }
+
+        const trigger = new Entity()
+        engine.addEntity(trigger)
+
+        trigger.addComponent(new Transform({ position: new Vector3(pos.x, pos.y, pos.z), scale: new Vector3(4, 5, .01), rotation: Quaternion.Euler(startRot.x, startRot.y, startRot.z)}))
+        trigger.addComponent(new utils.TriggerComponent(
+            new utils.TriggerBoxShape(new Vector3(4, 5, .01), Vector3.Zero()), //shape
+            0, //layer
+            0, //triggeredByLayer
+            null, //onTriggerEnter
+            null, //onTriggerExit
+            (): void => {
+                //onCameraEnter
+                log("Enter")
+                //this.isInRoom = true;
+            },
+            (): void => {
+                //onCameraEnter
+                log("Exit")
+                //this.isInRoom = false;
+            }
+        ))
     }
 
     //update
