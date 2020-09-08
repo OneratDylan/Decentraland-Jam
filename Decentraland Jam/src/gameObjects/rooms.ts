@@ -78,14 +78,6 @@ export class CreateRoom extends Entity {
                 bookshelf.setParent(this)
             }
 
-            //Bush
-            objNum = Scalar.RandomRange(1, 4)
-            if (objNum < 2) {
-                const bush = new Entity()
-                engine.addEntity(bush)
-                bush.addComponent(new GLTFShape("Models/Obj_Bush.gltf"))
-                bush.setParent(this)
-            }
 
             //Plant
             objNum = Scalar.RandomRange(1, 4)
@@ -103,15 +95,6 @@ export class CreateRoom extends Entity {
                 engine.addEntity(shelf)
                 shelf.addComponent(new GLTFShape("Models/Obj_Shelf001.gltf"))
                 shelf.setParent(this)
-            }
-
-            //Statue
-            objNum = Scalar.RandomRange(1, 4)
-            if (objNum < 2) {
-                const statue = new Entity()
-                engine.addEntity(statue)
-                statue.addComponent(new GLTFShape("Models/Obj_Statue.gltf"))
-                statue.setParent(this)
             }
 
             //Coffee Table
@@ -191,6 +174,15 @@ export class CreateRoom extends Entity {
                 coffeeTable.addComponent(new GLTFShape("Models/Obj_Table_Coffee.gltf"))
                 coffeeTable.setParent(this)
             }
+
+            //Bush
+            objNum = Scalar.RandomRange(1, 4)
+            if (objNum < 2) {
+                const bush = new Entity()
+                engine.addEntity(bush)
+                bush.addComponent(new GLTFShape("Models/Obj_Bush.gltf"))
+                bush.setParent(this)
+            }
         }
 
         //Room Three _____KITCHEN_______
@@ -256,6 +248,15 @@ export class CreateRoom extends Entity {
                 engine.addEntity(tree)
                 tree.addComponent(new GLTFShape("Models/Obj_Tree.gltf"))
                 tree.setParent(this)
+            }
+
+            //Statue
+            objNum = Scalar.RandomRange(1, 4)
+            if (objNum < 2) {
+                const statue = new Entity()
+                engine.addEntity(statue)
+                statue.addComponent(new GLTFShape("Models/Obj_Statue.gltf"))
+                statue.setParent(this)
             }
 
         }
