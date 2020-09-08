@@ -178,7 +178,7 @@ export class CreateRoom extends Entity {
             }
         }
 
-        //Room Three
+        //Room Three _____KITCHEN_______
         if (this.num == 3) {
             this.addComponent(new GLTFShape("Models/Room_10x10_03.gltf"))
             this.addComponent(new Transform({ position: pos }))
@@ -192,6 +192,23 @@ export class CreateRoom extends Entity {
                 desk.setParent(this)
             }
 
+            //Shelf
+            objNum = Scalar.RandomRange(1, 4)
+            if (objNum < 2) {
+                const shelf = new Entity()
+                engine.addEntity(shelf)
+                shelf.addComponent(new GLTFShape("Models/Obj_Shelf001.gltf"))
+                shelf.setParent(this)
+            }
+
+            //Coffee Table
+            objNum = Scalar.RandomRange(1, 4)
+            if (objNum < 2) {
+                const coffeeTable = new Entity()
+                engine.addEntity(coffeeTable)
+                coffeeTable.addComponent(new GLTFShape("Models/Obj_Table_Coffee.gltf"))
+                coffeeTable.setParent(this)
+            }
 
             //Kitchen bench
             objNum = Scalar.RandomRange(1, 4)
@@ -200,6 +217,15 @@ export class CreateRoom extends Entity {
                 engine.addEntity(KCounter)
                 KCounter.addComponent(new GLTFShape("Models/Obj_KitchenCounter.gltf"))
                 KCounter.setParent(this)
+            }
+
+            //Top Shelf
+            objNum = Scalar.RandomRange(1, 4)
+            if (objNum < 2) {
+                const topShelf = new Entity()
+                engine.addEntity(topShelf)
+                topShelf.addComponent(new GLTFShape("Models/Obj_TopShelf.gltf"))
+                topShelf.setParent(this)
             }
         }
 
