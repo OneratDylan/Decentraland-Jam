@@ -1,6 +1,7 @@
 import { SlerpData } from "customcomponents";
 import { distance } from "customcomponents";
 import utils from "node_modules/decentraland-ecs-utils/index"
+import { getUserPublicKey } from "@decentraland/Identity";
 
 let doorMeshes: Array<string> =
     [
@@ -25,7 +26,7 @@ export class Door extends Entity implements ISystem{
     public Open: boolean = false;
     public IsClosing: boolean = false;
     public isLocked: boolean = false;
-
+    public lastDoor: boolean = false;
     //init
     constructor(
         //local vars
@@ -94,13 +95,9 @@ export class Door extends Entity implements ISystem{
             (): void => {
                 //onCameraEnter
                 log("Enter")
-                //this.isInRoom = true;
+                this.lastDoor = true;
             },
-            (): void => {
-                //onCameraEnter
-                log("Exit")
-                //this.isInRoom = false;
-            }
+            null
         ))
     }
 
@@ -148,6 +145,7 @@ export class Door extends Entity implements ISystem{
                 this.getComponent(SlerpData).fraction = 0;
                 this.IsClosing = false
 
+                this.lastDoor = false;
                 this.addComponentOrReplace(new AudioSource(new AudioClip("Audio/Door_Close_Alt.mp3")))
                 this.getComponent(AudioSource).playOnce()
             }
