@@ -45,10 +45,10 @@ export class CreateRoom extends Entity {
             bookshelf.setParent(this)
 
             //Bush
-            //const bush = new Entity()
-            //engine.addEntity(bush)
-            //bush.addComponent(new GLTFShape("Models/Obj_Bush.gltf"))
-            //bush.setParent(this)
+            const bush = new Entity()
+            engine.addEntity(bush)
+            bush.addComponent(new GLTFShape("Models/Obj_Bush.gltf"))
+            bush.setParent(this)
 
             const root = new Entity()
             engine.addEntity(root)
@@ -89,6 +89,11 @@ export class CreateRoom extends Entity {
             engine.addEntity(couch)
             couch.addComponent(new GLTFShape("Models/Obj_Couch_Long_002.gltf"))
             couch.setParent(this)
+
+            const couchTwo = new Entity()
+            engine.addEntity(couchTwo)
+            couchTwo.addComponent(new GLTFShape("Models/Obj_Couch_Long.gltf"))
+            couchTwo.setParent(this)
         }
 
         //Room Two
@@ -130,7 +135,7 @@ export class CreateRoom extends Entity {
             trigger.addComponent(new Transform({ position: pos }))
 
             trigger.addComponent(new utils.TriggerComponent(
-                new utils.TriggerBoxShape(new Vector3(10,8,10), Vector3.Zero()), //shape
+                new utils.TriggerBoxShape(new Vector3(10,10,10), Vector3.Zero()), //shape
                 0, //layer
                 0, //triggeredByLayer
                 null, //onTriggerEnter
